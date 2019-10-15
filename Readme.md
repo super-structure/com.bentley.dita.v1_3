@@ -1,6 +1,6 @@
 ![Bentley logo](image/blogo.gif)
 # Bentley DITA V1.3 DocTypes
----
+
 2019-09-18
 
 This plug-in contains DTDs for Bentley's specializations of DITA v1.3 topics and maps. These are only shells and custom domains. 
