@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA FAQ Entity                                   -->
+<!--  VERSION:   1.1                                               -->
+<!--  DATE:      September 2014                                    -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//ENTITIES DITA FAQ//EN"
+      Delivered as file "bentley_faq.ent"                         -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the domain entity for FAQ topics        -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             September 2014                                    -->
+<!--                                                               -->
+<!-- (c) Copyright Bentley Systems, Incorporated 2019              -->
+<!--             All Rights Reserved.                              -->
+<!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved.       -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!--    2019.09.16 JTC: Updated for DITA v1.3 specification        -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                      FAQ ENTITIES                             -->
+<!-- ============================================================= -->
+
+<!ENTITY faq-att     
+  "(topic faq)"
+>
+
+<!-- ==================== End FAQ Entities ======================= -->
