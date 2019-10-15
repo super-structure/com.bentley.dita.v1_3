@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:rng:task.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<task id="task_q1d_pzf_yn">
+    <title>Task</title>
+    <shortdesc>This topic uses the Bentley Task topic  Relax NG schema.</shortdesc>
+    <prolog>
+        <metadata><keywords>
+            <indexterm>task</indexterm>
+        </keywords></metadata>
+    </prolog>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Highlighting Domain:</cmd>
+                <info>Use <em>some</em> emphasis.</info>
+            </step>
+            <step>
+                <cmd>Task Sub-step customization.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Substep 2.1</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Substep 2.2</cmd>
+                        <choices>
+                            <choice>Choice one</choice>
+                            <choice>Choice two</choice>
+                        </choices>
+                    </substep>
+                    <substep>
+                        <cmd>Substep 2.3</cmd>
+                        <choicetable frame="all" relcolwidth="1* 1*" id="choicetable_bv3_vwq_cjb">
+                            <chhead>
+                                <choptionhd>Option</choptionhd>
+                                <chdeschd>Description</chdeschd>
+                            </chhead>
+                            <chrow>
+                                <choption>Option 1</choption>
+                                <chdesc>Description 1</chdesc>
+                            </chrow>
+                            <chrow>
+                                <choption>Option 2</choption>
+                                <chdesc>Description 2</chdesc>
+                            </chrow>
+                        </choicetable>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Equation &amp; Math Domain:</cmd>
+                <info>
+                    <p>A legacy block equation with MathML content:</p>
+   <math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo>-</mml:mo><mml:mi>b</mml:mi><mml:mo>±</mml:mo><mml:msqrt><mml:msup><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:mn>4</mml:mn><mml:mi>a</mml:mi><mml:mi>c</mml:mi></mml:msqrt></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>a</mml:mi></mml:mrow></mml:mfrac></mml:math>    
+   </math>
+                </info>
+            </step>
+            <step>
+                <cmd>Programming Domain:</cmd>
+                <info>
+                    <syntaxdiagram>
+                        <keyin><kwd>KWD</kwd><kwdchoice>
+                            <kwd>KWD1</kwd><kwd>KWD2</kwd>
+                        </kwdchoice><var>var</var></keyin>
+                    </syntaxdiagram>
+                </info>
+            </step>
+            <step>
+                <cmd>UI Domain:</cmd>
+                <info>Press the <kbd>Enter</kbd> key.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

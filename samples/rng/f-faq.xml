@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:rng:faq.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<faq id="faq-template" xml:lang="en-us">
+  <title>FAQ</title>
+  <shortdesc>This topic uses the Bentley FAQ Topic Relax NG schema.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>faq</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <faqbody>
+    <faqgroup>
+      <title>Question Set 1</title>
+      <faqlist>
+        <faqitem>
+          <faqquest>Question 1</faqquest>
+          <faqans>Answer 1</faqans>
+          <faqprop></faqprop>
+        </faqitem>
+        <faqitem>
+          <faqquest>Question 2</faqquest>
+          <faqans>Answer 2</faqans>
+          <faqprop><ownerEmail href="email.address@your.com"><name>User Name</name></ownerEmail></faqprop>
+        </faqitem>
+      </faqlist>
+    </faqgroup>
+    <faqgroup>
+      <title>A Second Group of Questions</title>
+      <faqlist>
+        <faqitem>
+          <faqquest>Question 1</faqquest>
+          <faqans>Answer 1</faqans>
+        </faqitem>
+        <faqitem>
+          <faqquest>Question 2</faqquest>
+          <faqans>Answer 2</faqans>
+        </faqitem>
+      </faqlist>
+    </faqgroup> 
+    
+  </faqbody>
+</faq>
+

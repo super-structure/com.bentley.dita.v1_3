@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Base Map Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+
+      <system systemId="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd:1.3"
+              uri="xsd/highlightDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd:1.x"
+              uri="xsd/highlightDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd"
+              uri="xsd/highlightDomain.xsd"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd:1.3"
+           uri="xsd/highlightDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd:1.x"
+           uri="xsd/highlightDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd"
+           uri="xsd/highlightDomain.xsd"/>
+   </group>
+</catalog>

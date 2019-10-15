@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:rng:concept.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<concept id="concept_rc5_jzf_yn">
+ <title>Concept</title>
+ <shortdesc>This topic uses the Bentley Concept topic Relax NG schema.</shortdesc>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>concept</indexterm>    
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <section>
+   <title>Highlighting Domain</title>
+   <p>Now <em>this</em> is some emphasis.</p>
+  </section>
+  <section>
+   <title>Math &amp; Equation Domain</title>   
+   <p>A legacy inline equation: <mathph>A<sup>2</sup> + B<sup>2</sup> =  C<sup>2</sup></mathph></p>
+   <p>A legacy block equation:</p>
+   <math>A<sup>2</sup> + B<sup>2</sup> =  C<sup>2</sup></math>
+   <p>A legacy equation block:</p>
+   <equation>
+   <math>A<sup>2</sup> + B<sup>2</sup> =  C<sup>2</sup></math>
+   <eqsymbols>
+    <eqsymbol>
+     <symname>A</symname>
+     <symdesc>Long side of triangle</symdesc>
+    </eqsymbol>
+    <eqsymbol>
+     <symname>B</symname>
+     <symdesc>Short side of triangle</symdesc>
+    </eqsymbol>
+    <eqsymbol>
+     <symname>C</symname>
+     <symdesc>Hypotenuse of triangle</symdesc>
+    </eqsymbol>
+   </eqsymbols>
+   </equation>
+   <p>A legacy block equation with MathML content:</p>
+   <math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo>-</mml:mo><mml:mi>b</mml:mi><mml:mo>±</mml:mo><mml:msqrt><mml:msup><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:mn>4</mml:mn><mml:mi>a</mml:mi><mml:mi>c</mml:mi></mml:msqrt></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>a</mml:mi></mml:mrow></mml:mfrac></mml:math>    
+   </math>
+   <p>A legacy inline equation with MathML content: <mathph><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"
+			 id="GUID-8F13F947-884D-43D1-9F7F-4DF8CFFECCF1">
+				<mml:msup> <mml:mi>a</mml:mi> <mml:mn>2</mml:mn> </mml:msup>
+				<mml:msup> <mml:mrow> <mml:mo>+</mml:mo> <mml:mi>b</mml:mi> </mml:mrow>
+				<mml:mn>2</mml:mn> </mml:msup> <mml:mo>=</mml:mo> <mml:msup> <mml:mi>c</mml:mi>
+				<mml:mn>2</mml:mn> </mml:msup> 
+			 </mml:math></mathph></p>
+  <equation-block id="equation-block_p2c_xxd_cjb">
+   <mathml>
+    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+				<mml:msup> <mml:mi>a</mml:mi>
+				<mml:mn>2</mml:mn> </mml:msup> <mml:msup>
+				<mml:mrow> <mml:mo>+</mml:mo> <mml:mi>b</mml:mi> </mml:mrow> <mml:mn>2</mml:mn> </mml:msup>
+				<mml:mo>=</mml:mo> <mml:msup> <mml:mi>c</mml:mi> <mml:mn>2</mml:mn> </mml:msup> 
+			 </mml:math>
+   </mathml>
+  </equation-block>
+  </section>
+  <section>
+   <title>Programming Domain</title>
+  <syntaxdiagram>
+   <keyin>
+     <kwd>KWD</kwd>
+     <kwdchoice>
+      <kwd>KWD1</kwd>
+      <kwd>KWD2</kwd>
+     </kwdchoice>
+     <var>var</var>
+    </keyin>
+  </syntaxdiagram>
+  </section>
+  <section>
+   <title>UI Domain</title>
+   <p>Press <kbd>Enter</kbd>.</p>
+  </section>
+  <section>
+   <title>SVG</title>
+   <fig>
+   <title>Embedded SVG Image</title>
+   <svg-container>
+    <svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+    height="180" 
+    width="550"
+    id="GUID-">
+    <svg:title></svg:title>
+    <svg:defs>
+        <svg:path id="arrow-head" d="m 0,0 10,-3 v 6 z" style="fill: white !Important;"/>
+    </svg:defs>
+    <svg:style type="text/css">
+        .callout {
+            font-size: 12pt;
+            text-align: center;
+            font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+            text-anchor: middle;
+            fill: #002A43;
+        }
+        .sub {
+            baseline-shift: sub;
+            font-size: 0.8em;
+        }
+        .label {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Univers 47 CondensedLight', Univers, 'Arial Narrow', Arial, Helvetica, sans-serif;
+        }
+        .serif {
+            font-family: Century, Constantia, 'Times New Roman', times, serif;
+            font-style: italic;
+        }
+        .structure {
+            stroke: black;
+            stroke-width: 2px;
+            fill: none;
+        }
+        .dimension {
+            stroke: red;
+            stroke-width: 1px;
+            fill: none;
+        }
+        .load {
+            stroke: #62BB45;
+            fill: none;
+        }
+    </svg:style>
+    <svg:g transform="translate(160,200)">
+        <svg:g id="loads" class="load" stroke-dasharray="20,4">
+           <svg:circle r="150" cx="0" cy="0"/>
+           <svg:path d="M 86.6,-122.5 l -173.2,245"/>
+            <svg:path d="M 0,0 h150 M 0,0 L-50,-141.4"/>
+       </svg:g>
+        <svg:g id="Structure-Wireframe" class="structure">
+            <svg:path d="M -50,-141.4 A 150,150 109.5 0 1 150,0"/>
+            <svg:path d="M -50,-141.4 L 150,0" stroke-dasharray="10,3"/>
+            <svg:circle r="5" id="node-i" cx="-50" cy="-141.4" fill="white"/>
+            <svg:circle r="5" id="node-j" cx="150" cy="0" fill="white"/>
+        </svg:g>
+       <svg:g id="dimensions" class="dimension">
+           <svg:path d="M 50,-70.7 v -60 m0,60 l 50,-10 m-50,10 l 35,23"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(50,-130.7) rotate(90)"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(100,-80.7) rotate(170)"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(85,-47.7) rotate(210)"/>
+           <svg:path d="M 50,-145 v-50 M 88.6,-124.5 l 28.9,-40.8"/>
+           <svg:path d="M 50,-185 A 114,114 35.3 0 1 112.5,-158.3"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(50,-185) rotate(10)"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(112.5,-158.3) rotate(215)"/>
+           <svg:path d="M 120,-88 l20,-20 h 20"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(121,-89) rotate(315)"/>
+           <svg:path d="M 5,-100 l-20,20 h-20"/>
+           <svg:use xlink:href="#arrow-head" transform="translate(6,-99) rotate(135)"/>
+       </svg:g>
+        <svg:rect width="30" height="30" x="-135" y="-105" stroke="white" fill="white"/>
+       <svg:g class="callout">
+           <svg:text class="serif" x="-60" y="-150">i</svg:text>
+           <svg:text class="serif" x="162" y="5">j</svg:text>
+           <svg:text x="40" y="-120">y</svg:text>
+           <svg:text x="80" y="-35">x</svg:text>
+           <svg:text x="95" y="-85">z</svg:text>
+           <svg:text class="serif" x="85" y="-185">&#947;</svg:text>
+           <svg:text x="210" y="-103">curve member</svg:text>
+           <svg:text x="-90" y="-90">imaginary</svg:text>
+           <svg:text x="-90" y="-75">straight segment</svg:text>
+       </svg:g>
+    </svg:g>
+</svg:svg>
+   </svg-container>
+  </fig>
+  </section>
+ </conbody>
+</concept>

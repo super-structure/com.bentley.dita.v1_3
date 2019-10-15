@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:rng:troubleshooting.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<troubleshooting id="troubleshooting-template" xml:lang="en-us">
+  <title>Troubleshooting</title>
+  <shortdesc>This topic uses the Bentley Troubleshooting topic  Relax NG schema.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>troubleshooting</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <p>A description of the situation or conditions which the user may be experiencing.</p>
+    </condition>
+    <troubleSolution>
+      <cause>
+        <title>Highlighting Domain</title>
+        <p>It <em>should</em> have happened, but it did not.</p>
+      </cause>
+      <remedy>
+        <title>Solution 1</title>
+        <steps>
+          <step>
+            <cmd>This first</cmd>
+          </step>
+          <step>
+            <cmd>This next</cmd>
+          </step>
+        </steps>
+      </remedy>
+    </troubleSolution>
+    <troubleSolution>
+      <cause>
+        <title>Math &amp; Equation Domain</title>
+        <p>The problem lies elsewhere.</p>
+      </cause>
+      <remedy>
+        <title>Solution 2</title> 
+        <steps-informal>
+          <p>A less formal method of describing a solution.</p>
+          <p>A legacy block equation with MathML content:</p>
+   <math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo>-</mml:mo><mml:mi>b</mml:mi><mml:mo>±</mml:mo><mml:msqrt><mml:msup><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:mn>4</mml:mn><mml:mi>a</mml:mi><mml:mi>c</mml:mi></mml:msqrt></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>a</mml:mi></mml:mrow></mml:mfrac></mml:math>    
+   </math>
+        </steps-informal>
+      </remedy>
+    </troubleSolution>
+    <troubleSolution>
+      <cause>
+        <title>Programming Domain</title>
+        <p>Key-ins</p>
+      </cause>
+      <remedy>
+        <steps-informal>
+          <syntaxdiagram>
+   <keyin>
+     <kwd>KWD</kwd>
+     <kwdchoice>
+      <kwd>KWD1</kwd>
+      <kwd>KWD2</kwd>
+     </kwdchoice>
+     <var>var</var>
+    </keyin>
+  </syntaxdiagram>
+        </steps-informal>
+      </remedy>
+    </troubleSolution>
+    <troubleSolution>
+      <cause>
+        <title>UI Domain</title>
+        <p>Press the <kbd>Enter</kbd> key.</p>
+      </cause>
+      <remedy>
+        <steps>
+          <step>
+            <cmd>Task customization for sub-steps:</cmd>
+            <substeps>
+              <substep>
+                <cmd>Choices</cmd>
+                <choices>
+                  <choice>Choice 1</choice>
+                  <choice>Choice 2</choice>
+                </choices>
+              </substep>
+              <substep>
+                <cmd>Choice table</cmd>
+                        <choicetable frame="all" relcolwidth="1* 1*" id="choicetable_bv3_vwq_cjb">
+                            <chhead>
+                                <choptionhd>Option</choptionhd>
+                                <chdeschd>Description</chdeschd>
+                            </chhead>
+                            <chrow>
+                                <choption>Option 1</choption>
+                                <chdesc>Description 1</chdesc>
+                            </chrow>
+                            <chrow>
+                                <choption>Option 2</choption>
+                                <chdesc>Description 2</chdesc>
+                            </chrow>
+                        </choicetable>
+              </substep>
+            </substeps>
+          </step>
+        </steps>
+      </remedy>
+    </troubleSolution>
+  </troublebody>
+</troubleshooting>
