@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Concept</moduleTitle>
+    <headerComment xml:space="preserve"><![CDATA[
+============================================================= 
+                   HEADER                                     
+============================================================= 
+ MODULE:    DITA Verification                                 
+ VERSION:   1.1                                               
+ DATE:      September 2019                                    
+                                                              
+============================================================= 
+
+============================================================= 
+                   PUBLIC DOCUMENT TYPE DEFINITION            
+                   TYPICAL INVOCATION                         
+                                                              
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//ELEMENTS DITA 1.3 Verification//EN"
+      Delivered as file "verification.mod"                    
+
+============================================================= 
+SYSTEM:     Darwin Information Typing Architecture (DITA)     
+                                                              
+PURPOSE:    Define elements and specialization atttributes    
+            for Concepts                                      
+                                                              
+ORIGINAL CREATION DATE:                                       
+            February 2014                                     
+                                                              
+            (C) Copyright Bentley Systems, Incorporated 2014. 
+            (C) Copyright OASIS Open 2005, 2009.              
+            (C) Copyright IBM Corporation 2001, 2004.         
+            All Rights Reserved.                              
+ UPDATES:                                                     
+   2005.11.15 RDA: Removed old declaration for                
+                   conceptClasses entity                      
+   2006.06.07 RDA: Added <abstract> element                   
+   2006.06.07 RDA: Make universal attributes universal        
+                     (DITA 1.1 proposal #12)                  
+   2006.11.30 RDA: Remove #FIXED from DITAArchVersion         
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.01.30 RDA: Replace @conref defn. with %conref-atts;   
+   2008.02.13 RDA: Create .content and .attributes entities   
+   2008.05.06 RDA: Added conbodydiv                           
+   2019.09.16 JTC: Updated for DITA v1.3 specification        
+============================================================= 
+
+
+============================================================= 
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>verification</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//BENTLEY//ELEMENTS DITA<var presep=" " name="ditaver"/> Verification//EN</dtdMod>
+        <dtdEnt>-//BENTLEY//ENTITIES DITA<var presep=" " name="ditaver"/> Verification//EN</dtdEnt>
+        <xsdMod>urn:bentley:names:tc:dita:xsd:verificationMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:bentley:names:tc:dita:xsd:verificationGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:bentley:names:tc:dita:rnc:verificationMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:bentley:names:tc:dita:rng:verificationMod.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic concept)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>TOPIC NESTING OVERRIDES</a:documentation>
+
+    <define name="verification-info-types">
+      <ref name="info-types"/>
+    </define>
+
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="verification">
+      <ref name="verification.element"/>
+    </define>
+    <define name="verbody">
+      <ref name="verbody.element"/>
+    </define>
+    <define name="verbodydiv">
+      <ref name="verbodydiv.element"/>
+    </define>
+    <define name="reference">
+      <ref name="reference.element"/>
+    </define>
+    <define name="problem">
+      <ref name="problem.element"/>
+    </define>
+    <define name="calcs">
+      <ref name="calcs.element"/>
+    </define>
+    <define name="comparison">
+      <ref name="comparison.element"/>
+    </define>
+    <define name="input">
+      <ref name="input.element"/>
+    </define>
+    <define name="output">
+      <ref name="output.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+
+    <div>
+      <a:documentation> LONG NAME: Verification Problem</a:documentation>
+      <define name="verification.content">
+        <ref name="title"/>
+        <optional>
+          <ref name="titlealts"/>
+        </optional>
+        <optional>
+          <choice>
+            <ref name="abstract"/>
+            <ref name="shortdesc"/>
+          </choice>
+        </optional>
+        <optional>
+          <ref name="prolog"/>
+        </optional>
+        <optional>
+          <ref name="verbody"/>
+        </optional>
+        <optional>
+          <ref name="related-links"/>
+        </optional>
+        <zeroOrMore>
+          <ref name="verification-info-types"/>
+        </zeroOrMore>
+      </define>
+      <define name="verification.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="verification.element">
+        <element name="verification" dita:longName="Verification Problem">
+          <a:documentation>The &lt;verification> element is the top-level element for a topic that answers the question what is? verifications provide background information that users must know before they can
+            successfully work with a product or interface. Often, a verification is an extended definition of a major abstraction such as a process or function. It might also have an example or a graphic,
+            but generally the structure of a verification is fairly simple. Category: verification elements</a:documentation>
+          <ref name="verification.attlist"/>
+          <ref name="verification.content"/>
+        </element>
+      </define>
+      <define name="verification.attlist" combine="interleave">
+        <ref name="verification.attributes"/>
+        <ref name="arch-atts"/>
+        <ref name="domains-att"/>
+      </define>
+      <define name="idElements" combine="choice">
+        <ref name="verification.element"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation> LONG NAME: Verification Body </a:documentation>
+      <define name="verbody.content">
+        <zeroOrMore>
+          <ref name="reference"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="problem"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="calcs"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="comparison"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="input"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="output"/>
+        </zeroOrMore>
+      </define>
+      <define name="verbody.attributes">
+        <ref name="id-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="base"/>
+        </optional>
+        <ref name="base-attribute-extensions"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="verbody.element">
+        <element name="verbody" dita:longName="Verification Body">
+          <a:documentation>The &lt;verbody> element is the main body-level element for a verification. Like the &lt;body> element of a general &lt;topic>, &lt;verbody> allows paragraphs, lists, and other
+            elements as well as sections and examples. But &lt;verbody> has a constraint that a section or an example can be followed only by other sections or examples. Category: Concept
+            elements</a:documentation>
+          <ref name="verbody.attlist"/>
+          <ref name="verbody.content"/>
+        </element>
+      </define>
+      <define name="verbody.attlist" combine="interleave">
+        <ref name="verbody.attributes"/>
+      </define>
+
+    </div>
+    <div>
+      <a:documentation> LONG NAME: Verification Body division </a:documentation>
+      <define name="verbodydiv.content">
+        <zeroOrMore>
+          <choice>
+            <ref name="example"/>
+            <ref name="section"/>
+          </choice>
+        </zeroOrMore>
+      </define>
+      <define name="verbodydiv.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="verbodydiv.element">
+        <element name="verbodydiv" dita:longName="Concept Body division">
+          <a:documentation>The &lt;verbodydiv> element is similar to the &lt;bodydiv> element in that it provides an informal container for content that may be grouped within a concept. There are no
+            additional semantics attached to the verbodydiv element; it is purely a grouping element provided to help organize content.</a:documentation>
+          <ref name="verbodydiv.attlist"/>
+          <ref name="verbodydiv.content"/>
+        </element>
+      </define>
+      <define name="verbodydiv.attlist" combine="interleave">
+        <ref name="verbodydiv.attributes"/>
+      </define>
+
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Reference</a:documentation>
+      <define name="reference.content">        
+        <zeroOrMore>
+          <ref name="section.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="reference.attributes">
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>        
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="reference.element">
+        <element name="reference" dita:longName="Reference Statement">
+          <a:documentation></a:documentation>
+          <ref name="reference.attlist"/>
+          <ref name="reference.content"/>
+        </element>
+      </define>
+      <define name="reference.attlist" combine="interleave">
+        <ref name="reference.attributes"/>
+      </define>
+  </div>
+    <div>
+      <a:documentation>LONG NAME: Problem Statement</a:documentation>
+      <define name="problem.content">
+        <zeroOrMore>
+          <ref name="section.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="problem.attributes">
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>        
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="problem.element">
+        <element name="problem" dita:longName="Problem Statement">
+          <a:documentation></a:documentation>
+          <ref name="problem.attlist"/>
+          <ref name="problem.content"/>
+        </element>
+      </define>
+      <define name="problem.attlist" combine="interleave">
+        <ref name="problem.attributes"/>
+      </define>
+  </div>
+    <div>
+      <a:documentation>LONG NAME: Calculations Container</a:documentation>
+      <define name="calcs.content">
+        <zeroOrMore>
+          <choice>
+            <ref name="section.notitle.cnt"/>
+            <ref name="verbodydiv"/>
+            <ref name="section"/>
+          </choice>
+        </zeroOrMore>
+      </define>
+      <define name="calcs.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="calcs.element">
+        <element name="calcs" dita:longName="Comparison">
+          <a:documentation>Calculations Container</a:documentation>
+          <ref name="calcs.attlist"/>
+          <ref name="calcs.content"/>
+        </element>
+      </define>
+      <define name="calcs.attlist" combine="interleave">
+        <ref name="calcs.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Comparison</a:documentation>
+      <define name="comparison.content">
+        <zeroOrMore>
+          <ref name="section.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="comparison.attributes">
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>        
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="comparison.element">
+        <element name="comparison" dita:longName="Comparison">
+          <a:documentation></a:documentation>
+          <ref name="comparison.attlist"/>
+          <ref name="comparison.content"/>
+        </element>
+      </define>
+      <define name="comparison.attlist" combine="interleave">
+        <ref name="comparison.attributes"/>
+      </define>
+  </div>
+    <div>
+      <a:documentation>LONG NAME: Input Example</a:documentation>
+      <define name="input.content">
+        <zeroOrMore>
+          <ref name="example.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="input.attributes">
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>        
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="input.element">
+        <element name="input" dita:longName="Input Example">
+          <a:documentation></a:documentation>
+          <ref name="input.attlist"/>
+          <ref name="input.content"/>
+        </element>
+      </define>
+      <define name="input.attlist" combine="interleave">
+        <ref name="input.attributes"/>
+      </define>
+  </div>
+    <div>
+      <a:documentation>LONG NAME: Output Example</a:documentation>
+      <define name="output.content">
+        <zeroOrMore>
+          <ref name="example.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="output.attributes">
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>        
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="output.element">
+        <element name="output" dita:longName="Output Example">
+          <a:documentation></a:documentation>
+          <ref name="output.attlist"/>
+          <ref name="output.content"/>
+        </element>
+      </define>
+      <define name="output.attlist" combine="interleave">
+        <ref name="output.attributes"/>
+      </define>
+    </div>
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+
+    <define name="verification.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/topic verification/verification "/>
+     	</optional>
+     </define>
+     <define name="verbody.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/body verification/verbody "/>
+     	</optional>
+     </define>
+     <define name="verbodydiv.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/bodydiv verification/verbodydiv "/>
+     	</optional>
+     </define>
+     <define name="reference.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/section verification/reference "/>
+     	</optional>
+     </define>
+     <define name="problem.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/section verification/problem "/>
+     	</optional>
+     </define>
+     <define name="calcs.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/bodydiv verification/calcs "/>
+     	</optional>
+     </define>
+     <define name="comparison.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/section verification/comparison "/>
+     	</optional>
+     </define>
+     <define name="input.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/example verification/input "/>
+     	</optional>
+     </define>
+     <define name="output.attlist" combine="interleave">
+     	<ref name="global-atts"/>
+     	<optional>
+     		<attribute name="class" a:defaultVAlue="- topic/example verification/output "/>
+     	</optional>
+     </define>
+  </div>
+</grammar>

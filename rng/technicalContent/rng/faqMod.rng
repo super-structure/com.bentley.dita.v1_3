@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA FAQ</moduleTitle>
+    <headerComment xml:space="preserve"><![CDATA[
+============================================================= 
+                   HEADER                                     
+============================================================= 
+ MODULE:    DITA FAQ Elements                                 
+ VERSION:   1.1                                               
+ DATE:      September 2014                                    
+                                                              
+============================================================= 
+
+============================================================= 
+                   PUBLIC DOCUMENT TYPE DEFINITION            
+                   TYPICAL INVOCATION                         
+                                                              
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//ELEMENTS DITA 1.3 FAQ//EN"
+      Delivered as file "bentley_faq.mod"                          
+
+============================================================= 
+SYSTEM:     Darwin Information Typing Architecture (DITA)     
+                                                              
+PURPOSE:    Define elements and specialization atttributes    
+            for Concepts                                      
+                                                              
+ORIGINAL CREATION DATE:                                       
+            February 2014                                     
+                                                        
+(c) Copyright Bentley Systems, Incorporated 2019 
+                   All Rights Reserved.       
+(c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. 
+            (C) Copyright OASIS Open 2005, 2009.              
+            (C) Copyright IBM Corporation 2001, 2004.         
+            All Rights Reserved.                              
+ UPDATES:                                                     
+   2005.11.15 RDA: Removed old declaration for                
+                   conceptClasses entity                      
+   2006.06.07 RDA: Added <abstract> element                   
+   2006.06.07 RDA: Make universal attributes universal        
+                     (DITA 1.1 proposal #12)                  
+   2006.11.30 RDA: Remove #FIXED from DITAArchVersion         
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.01.30 RDA: Replace @conref defn. with %conref-atts;   
+   2008.02.13 RDA: Create .content and .attributes entities     
+   2019.09.16 JTC: Updated for DITA v1.3 specification        
+============================================================= 
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>faq</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//OASIS//ELEMENTS DITA<var presep=" " name="ditaver"/> FAQ//EN</dtdMod>
+        <dtdEnt>-//OASIS//ENTITIES DITA<var presep=" " name="ditaver"/> FAQ//EN</dtdEnt>
+        <xsdMod>urn:oasis:names:tc:dita:xsd:faqMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:oasis:names:tc:dita:xsd:faqGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:oasis:names:tc:dita:rnc:faqMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:oasis:names:tc:dita:rng:faqMod.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic faq)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>TOPIC NESTING OVERRIDES</a:documentation>
+
+    <define name="faq-info-types">
+      <ref name="info-types"/>
+    </define>
+
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="faqbody">
+      <ref name="faqbody.element"/>
+    </define>
+    <define name="faqgroup">
+      <ref name="faqgroup.element"/>
+    </define>
+    <define name="faqlist">
+      <ref name="faqlist.element"/>
+    </define>
+    <define name="faqitem">
+      <ref name="faqitem.element"/>
+    </define>
+    <define name="faqquest">
+      <ref name="faqquest.element"/>
+    </define>
+    <define name="faqans">
+      <ref name="faqans.element"/>
+    </define>
+    <define name="faqprop">
+      <ref name="faqprop.element"/>
+    </define>
+    <define name="name">
+      <ref name="name.element"/>
+    </define>
+    <define name="ownerEmail">
+      <ref name="ownerEmail.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+
+    <div>
+      <a:documentation> LONG NAME: Frequently Asked Questions Type </a:documentation>
+      <define name="faq.content">
+        <ref name="title"/>
+        <optional>
+          <ref name="titlealts"/>
+        </optional>
+        <optional>
+          <choice>
+            <ref name="abstract"/>
+            <ref name="shortdesc"/>
+          </choice>
+        </optional>
+        <optional>
+          <ref name="prolog"/>
+        </optional>
+        <optional>
+          <ref name="faqbody"/>
+        </optional>
+        <optional>
+          <ref name="related-links"/>
+        </optional>
+        <zeroOrMore>
+          <ref name="faq-info-types"/>
+        </zeroOrMore>
+      </define>
+      <define name="faq.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="faq.element">
+        <element name="faq" dita:longName="Frequently Asked Questions Type">
+          <a:documentation>The &lt;faq> element is the top-level element for a topic that answers the question what is? Concepts provide background information that users must know before they can
+            successfully work with a product or interface. Often, a faq is an extended definition of a major abstraction such as a process or function. It might also have an example or a graphic,
+            but generally the structure of a faq is fairly simple. Category: Concept elements</a:documentation>
+          <ref name="faq.attlist"/>
+          <ref name="faq.content"/>
+        </element>
+      </define>
+      <define name="faq.attlist" combine="interleave">
+        <ref name="faq.attributes"/>
+        <ref name="arch-atts"/>
+        <ref name="domains-att"/>
+      </define>
+      <define name="idElements" combine="choice">
+        <ref name="faq.element"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation> LONG NAME: FAQ Body </a:documentation>
+      <define name="faqbody.content">
+        <choice>
+          <oneOrMore>
+            <ref name="faqgroup"/>
+          </oneOrMore>
+          <ref name="faqlist"/>
+        </choice>
+      </define>
+      <define name="faqbody.attributes">
+        <ref name="id-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="base"/>
+        </optional>
+        <ref name="base-attribute-extensions"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="faqbody.element">
+        <element name="faqbody" dita:longName="Concept Body">
+          <a:documentation>The &lt;faqbody> element is the main body-level element for a faq. Like the &lt;body> element of a general &lt;topic>, &lt;faqbody> allows paragraphs, lists, and other
+            elements as well as sections and examples. But &lt;faqbody> has a constraint that a section or an example can be followed only by other sections or examples. Category: Concept
+            elements</a:documentation>
+          <ref name="faqbody.attlist"/>
+          <ref name="faqbody.content"/>
+        </element>
+      </define>
+      <define name="faqbody.attlist" combine="interleave">
+        <ref name="faqbody.attributes"/>
+      </define>
+
+    </div>
+    <div>
+    <a:documentation>LONG NAME: FAQ Grouping</a:documentation>
+    <define name="faqgroup.content">
+      <optional>
+        <ref name="title"/>
+      </optional>
+      <ref name="faqlist"/>
+    </define>
+    <define name="faqgroup.attributes">
+      <ref name="section.attributes"/>
+    </define>
+    <define name="faqgroup.element">
+      <element name="faqgroup" dita:longName="FAQ Grouping">
+        <a:documentation></a:documentation>
+        <ref name="faqgroup.attlist"/>
+        <ref name="faqgroup.content"/>
+      </element>
+    </define>
+    <define name="faqgroup.attlist" combine="interleave">
+      <ref name="faqgroup.attributes"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: FAQ List</a:documentation>
+    <define name="faqlist.content">
+      <oneOrMore>
+        <ref name="faqitem"/>
+      </oneOrMore>
+    </define>
+    <define name="faqlist.attributes">
+      <ref name="simpletable.attributes"/>
+    </define>
+    <define name="faqlist.element">
+      <element name="faqlist" dita:longName="FAQ List">
+        <a:documentation></a:documentation>
+        <ref name="faqlist.attlist"/>
+        <ref name="faqlist.content"/>
+      </element>
+    </define>
+    <define name="faqlist.attlist" combine="interleave">
+      <ref name="faqlist.attributes"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: FAQ Item</a:documentation>
+    <define name="faqitem.content">
+      <ref name="faqquest"/>
+      <ref name="faqans"/>
+      <optional>
+        <ref name="faqprop"/>
+      </optional>
+    </define>
+    <define name="faqitem.attributes">
+      <ref name="strow.attributes"/>
+    </define>
+    <define name="faqitem.element">
+      <element name="faqitem" dita:longName="fAQ Item">
+        <a:documentation></a:documentation>
+        <ref name="faqitem.attlist"/>
+        <ref name="faqitem.content"/>
+      </element>
+    </define>
+    <define name="faqitem.attlist" combine="interleave">
+      <ref name="faqitem.attributes"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: FA Question</a:documentation>
+    <define name="faqquest.content">
+      <optional>
+        <ref name="tblcell.cnt"/>
+      </optional>
+    </define>
+    <define name="faqquest.attributes">
+      <ref name="stentry.attributes"/>
+    </define>
+    <define name="faqquest.element">
+      <element name="faqquest" dita:longName="FA Question">
+        <a:documentation></a:documentation>
+        <ref name="faqquest.attlist"/>
+        <ref name="faqquest.content"/>
+      </element>
+    </define>
+    <define name="faqquest.attlist" combine="interleave">
+      <ref name="faqquest.attributes"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: FAQ Answer</a:documentation>
+    <define name="faqans.content">
+      <optional>
+        <ref name="tblcell.cnt"/>
+      </optional>
+    </define>
+    <define name="faqans.attributes">
+      <ref name="stentry.attributes"/>
+    </define>
+    <define name="faqans.element">
+      <element name="faqans" dita:longName="FAQ Answer">
+        <a:documentation></a:documentation>
+        <ref name="faqans.attlist"/>
+        <ref name="faqans.content"/>
+      </element>
+    </define>
+    <define name="faqans.attlist" combine="interleave">
+      <ref name="faqans.attributes"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: FAQ Properties</a:documentation>
+    <define name="faqprop.content">
+      <optional>
+        <ref name="ownerEmail"/>
+      </optional>
+    </define>
+    <define name="faqprop.attributes">
+      <ref name="stentry.attributes"/>
+    </define>
+    <define name="faqprop.element">
+      <element name="faqprop" dita:longName="FAQ Properties">
+        <a:documentation></a:documentation>
+        <ref name="faqprop.attlist"/>
+        <ref name="faqprop.content"/>
+      </element>
+    </define>
+    <define name="faqprop.attlist" combine="interleave">
+      <ref name="faqprop.attributes"/>
+    </define>
+  </div>
+    <div>
+      <a:documentation>LONG NAME: Name</a:documentation>
+      <define name="name.content">
+        <ref name="text.content"/>
+      </define>
+      <define name="name.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="name.element">
+        <element name="name" dita:longName="Name">
+          <a:documentation></a:documentation>
+          <ref name="name.attlist"/>
+          <ref name="name.content"/>
+        </element>
+      </define>
+      <define name="name.attlist" combine="interleave">
+        <ref name="name.attributes"></ref>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Owner E-mail</a:documentation>
+      <define name="ownerEmail.content">
+        <ref name="name"/>
+      </define>
+      <define name="ownerEmail.attributes">
+        <optional>
+          <attribute name="href"/>
+        </optional>
+        <optional>
+          <attribute name="keyref"/>
+        </optional>
+        <optional>
+          <attribute name="type"/>
+        </optional>
+        <attribute name="format">
+          <value>mailto</value>
+        </attribute>
+        <attribute name="scope">
+          <choice>
+            <value>external</value>
+            <value>local</value>
+            <value>peer</value>
+            <value>-dita-use-conref-target</value>
+          </choice>
+        </attribute>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="ownerEmail.element">
+        <element name="ownerEmail" dita:longName="Owner E-mail">
+          <a:documentation></a:documentation>
+          <ref name="ownerEmail.attlist"/>
+          <ref name="ownerEmail.content"/>
+        </element>
+      </define>
+      <define name="ownerEmail.attlist" combine="interleave">
+        <ref name="ownerEmail.attributes"></ref>
+      </define>
+    </div>
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+
+    <define name="faq.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/topic faq/faq "/>
+      </optional>
+    </define>
+    <define name="faqbody.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/body faq/faqbody "/>
+      </optional>
+    </define>
+    <define name="faqgroup.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/section faq/faqgroup "/>
+      </optional>
+    </define>
+    <define name="faqlist.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/simpletable faq/faqlist "/>
+      </optional>
+    </define>
+    <define name="faqitem.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/strow faq/faqitem "/>
+      </optional>
+    </define>
+    <define name="faqquest.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/stentry faq/faqquest "/>
+      </optional>
+    </define>
+    <define name="faqans.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/stentry faq/faqans "/>
+      </optional>
+    </define>
+    <define name="faqprop.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/stentry faq/faqprop "/>
+      </optional>
+    </define>
+    <define name="name.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/ph faq/name "/>
+      </optional>
+    </define>
+    <define name="ownerEmail.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultVAlue="- topic/xref faq/ownerEmail "/>
+      </optional>
+    </define>
+  </div>
+</grammar>

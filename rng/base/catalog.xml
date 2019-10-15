@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Base Map Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:bentley:names:tc:dita:rng:highlightDomain.rng:1.3"
+              uri="rng/highlightDomain.rng"/>
+      <system systemId="urn:bentley:names:tc:dita:rng:highlightDomain.rng:1.x"
+              uri="rng/highlightDomain.rng"/>
+      <system systemId="urn:bentley:names:tc:dita:rng:highlightDomain.rng"
+              uri="rng/highlightDomain.rng"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:bentley:names:tc:dita:rng:highlightDomain.rng:1.3"
+           uri="rng/highlightDomain.rng"/>
+      <uri name="urn:bentley:names:tc:dita:rng:highlightDomain.rng:1.x"
+           uri="rng/highlightDomain.rng"/>
+      <uri name="urn:bentley:names:tc:dita:rng:highlightDomain.rng"
+           uri="rng/highlightDomain.rng"/>
+   </group>
+</catalog>
