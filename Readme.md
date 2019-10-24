@@ -12,5 +12,4 @@ This plug-in contains DTDs for Bentley's specializations of DITA v1.3 topics and
 * The filenames prefixes of "bentley_" were removed.
 
 ## To Do:
-
-* Create XSDs using URLs  - copy Schema files & just do grep find/replace for System URIs - URL
+Refer to the GitHub repository Issues list.
