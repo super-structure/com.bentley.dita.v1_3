@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--
+
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+
+--><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <!--DITA Technical Content modules-->
         
    <public publicId="-//BENTLEY//DTD DITA 1.3 Concept//EN" uri="dtd/concept.dtd"/>

@@ -13,3 +13,6 @@ This plug-in contains DTDs for Bentley's specializations of DITA v1.3 topics and
 
 ## To Do:
 Refer to the [GitHub repository Issues list](https://github.com/super-structure/com.bentley.dita.v1_3/issues).
+
+## Copyright
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.

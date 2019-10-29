@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--
+
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+
+--><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 
    <group><!-- System ID (URL) catalog entries -->
       <system systemId="urn:bentley:names:tc:dita:rng:concept.rng:1.3"
