@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=============================================================-->
+<!--                   HEADER                                    -->
+<!--=============================================================-->
+<!-- MODULE:    DITA FAQ                                         -->
+<!-- VERSION:   1.3                                              -->
+<!-- DATE:      September 2019                                   -->
+<!--                                                             -->
+<!--=============================================================-->
+<!--=============================================================-->
+<!--                   PUBLIC DOCUMENT TYPE DEFINITION           -->
+<!--                   TYPICAL INVOCATION                        -->
+<!--                                                             -->
+<!-- Refer to this file by the following public identifier or an -->
+<!--      appropriate system identifier                          -->
+<!--PUBLIC "-//BENTELY//ELEMENTS DITA 1.3 Verification//EN"      -->
+<!--      Delivered as file "verification.mod"                   -->
+<!--=============================================================-->
+<!--SYSTEM:     Darwin Information Typing Architecture (DITA)    -->
+<!--                                                             -->
+<!--PURPOSE:    Define elements and specialization atttributes   -->
+<!--            for Concepts                                     -->
+<!--                                                             -->
+<!--ORIGINAL CREATION DATE:                                      -->
+<!--            March 2001                                       -->
+<!--                                                             -->
+<!--             Copyright (c) Bentley Systems, Incorporated.      -->
+<!--             All rights reserved.                              -->
+<!--            (C) Copyright OASIS Open 2005, 2009.             -->
+<!--            (C) Copyright IBM Corporation 2001, 2004.        -->
+<!--            All Rights Reserved.                             -->
+<!-- UPDATES:                                                    -->
+<!--   2005.11.15 RDA: Removed old declaration for               -->
+<!--                   conceptClasses entity                     -->
+<!--   2006.06.07 RDA: Added <abstract> element                  -->
+<!--   2006.06.07 RDA: Make universal attributes universal       -->
+<!--                     (DITA 1.1 proposal #12)                 -->
+<!--   2006.11.30 RDA: Remove #FIXED from DITAArchVersion        -->
+<!--   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2      -->
+<!--   2008.01.30 RDA: Replace @conref defn. with %conref-atts;  -->
+<!--   2008.02.13 RDA: Create .content and .attributes entities  -->
+<!--   2008.05.06 RDA: Added conbodydiv                          -->
+<!--   2019.09.20 JTC: Moved group and element defintions to     -->
+<!--                    separate files per DITA 1.3 convention   -->
+<!--=============================================================-->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- ==================== Import Section ======================= -->
+    <xs:import namespace="http://dita.oasis-open.org/architecture/2005/"
+      schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/base/xsd/ditaarch.xsd"/>
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic faq)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+  
+    <xs:group name="faq-info-types">
+      <xs:choice>
+        <xs:group ref="faq"/>
+        <xs:group ref="info-types"/>
+      </xs:choice>
+    </xs:group>
+  
+  <!--        LONG NAME: Frequently Asked Questions Type		       -->
+  <xs:element name="faq">
+    <xs:annotation>
+      <xs:documentation>
+        The &lt;<keyword>faq</keyword>&gt; element is the top level DITA element for the Frequenly Asked Questions info type. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="faq.class">
+          <xs:attribute ref="class" default="- topic/topic faq/faq "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="faq.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faq.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faq.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faq.content">
+    <xs:sequence>
+      <xs:sequence>
+        <xs:group ref="title"/>
+        <xs:group ref="titlealts" minOccurs="0"/>
+        <xs:choice minOccurs="0" >
+          <xs:group ref="shortdesc" />
+          <xs:group ref="abstract" />
+        </xs:choice>      
+        <xs:group ref="prolog" minOccurs="0"/>
+        <xs:group ref="faqbody" minOccurs="0"/>
+        <xs:group ref="related-links" minOccurs="0"/>
+        <xs:group ref="faq-info-types" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faq.attributes">
+    <xs:attributeGroup ref="topic.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FAQ Body			               -->
+  <xs:element name="faqbody">
+    <xs:annotation>
+      <xs:documentation>The &lt;<keyword>faqbody</keyword>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="faqbody.class">
+          <xs:attribute ref="class" default="- topic/body faq/faqbody "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqbody.class">
+    <xs:sequence>
+      <xs:group ref="faqbody.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqbody.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqbody.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="faqgroup" minOccurs="0"/><!--  type="faqgroup.class"  -->
+        <xs:element name="faqlist" /><!-- type="faqlist.class" -->
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqbody.attributes">
+    <xs:attributeGroup ref="id-atts"/>
+   <!-- <xs:attributeGroup ref="ishlabelxpath-general-default"/>
+    <xs:attributeGroup ref="ishlinkxpath-general-default"/>-->
+    <xs:attributeGroup ref="localization-atts"/>
+    <xs:attribute name="base" type="xs:string"/>
+    <xs:attributeGroup ref="base-attribute-extensions"/>
+    <xs:attribute name="outputclass" type="xs:string"/>
+    <xs:attribute name="inc-list" default="no">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="no"/>
+          <xs:enumeration value="yes"/>
+          <xs:enumeration value="-dita-use-conref-target"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FAQ Grouping                      -->
+  <xs:element name="faqgroup">
+    <xs:annotation>
+      <xs:documentation> The &lt;<keyword>faqgroup</keyword>&gt; element represents 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqgroup.class">
+          <xs:attribute ref="class" default="- topic/section faq/faqgroup "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqgroup.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqgroup.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqgroup.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqgroup.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element name="faqlist"/><!-- type="faqlist.class" -->
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqgroup.attributes">
+    <xs:attributeGroup ref="section.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FAQ list                          -->
+  <xs:element name="faqlist">
+    <xs:annotation>
+      <xs:documentation>The &lt;<keyword>faqlist</keyword>&gt; element
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqlist.class">
+          <xs:attribute ref="class" default="- topic/simpletable faq/faqlist "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqlist.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqlist.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqlist.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqlist.content">
+    <xs:sequence>
+      <xs:element name="faqitem" maxOccurs="unbounded"/><!-- type="faqitem.class"  -->
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqlist.attributes">
+    <xs:attributeGroup ref="simpletable.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FAQ Item                          -->
+  <xs:element name="faqitem">
+    <xs:annotation>
+      <xs:documentation>The &lt;<keyword>faqitem</keyword>&gt; element
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqitem.class">
+          <xs:attribute ref="class" default="- topic/strrow faq/faqitem "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqitem.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqitem.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqitem.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqitem.content">
+    <xs:sequence>
+      <xs:element name="faqquest"/><!--  type="faqquest.class" -->
+      <xs:element name="faqans"/><!--  type="faqans.class" -->
+      <xs:element name="faqprop" minOccurs="0"/><!--  type="faqprop.class" -->
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqitem.attributes">
+    <xs:attributeGroup ref="strow.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FA Question                       -->
+  <xs:element name="faqquest">
+    <xs:annotation>
+      <xs:documentation>The &lt;<keyword>faqquest</keyword>&gt; element
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqquest.class">
+          <xs:attribute ref="class" default="- topic/stentry faq/faqquest "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqquest.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqquest.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqquest.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqquest.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="tblcell.cnt"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqquest.attributes">
+    <xs:attributeGroup ref="stentry.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                  LONG NAME: FAQ Answer                        -->
+  <xs:element name="faqans">
+    <xs:annotation>
+      <xs:documentation> The &lt;<keyword>faqans</keyword>&gt; element represents 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqans.class">
+          <xs:attribute ref="class" default="- topic/stentry faq/faqans "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqans.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqans.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqans.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqans.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="tblcell.cnt"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqans.attributes">
+    <xs:attributeGroup ref="stentry.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                   LONG NAME: FAQ Properties                   -->
+  <xs:element name="faqprop">
+    <xs:annotation>
+      <xs:documentation>The &lt;<keyword>faqprop</keyword>&gt; element
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:complexContent>
+        <xs:extension base="faqprop.class">
+          <xs:attribute ref="class" default="- topic/stentry faq/faqprop "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="faqprop.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="faqprop.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="faqprop.attributes"/>
+  </xs:complexType>
+  
+  <xs:group name="faqprop.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ownerEmail" minOccurs="0"/><!-- type="ownerEmail.class"  -->
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:attributeGroup name="faqprop.attributes">
+    <xs:attributeGroup ref="stentry.attributes"/>
+  </xs:attributeGroup>
+  
+  <!--                    LONG NAME: Name                            -->
+  <xs:element name="name">
+    <xs:annotation>
+      <xs:documentation>
+        The name (&lt;name&gt;) element is used 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="name.class">
+          <xs:attribute ref="class" default="- topic/ph faq/name "/>          
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="name.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="name.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="name.attributes"/>
+  </xs:complexType>
+  
+  <xs:attributeGroup name="name.attributes">
+    <xs:attributeGroup ref="univ-atts"/>
+    <!--<xs:attributeGroup ref="ishlabelxpath-general-default"/>
+    <xs:attributeGroup ref="ishlinkxpath-general-default"/>-->
+    <xs:attribute name="outputclass" type="xs:string"/>
+  </xs:attributeGroup>
+  
+  <xs:group name="name.content">
+    <xs:sequence>      
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="text.content" minOccurs="0"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+  <!--                    LONG NAME: Owner E-mail                    -->
+  <xs:element name="ownerEmail">
+    <xs:annotation>
+      <xs:documentation>
+        The &lt;ownerEmail&gt; element is used to
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="ownerEmail.class">
+          <xs:attribute ref="class" default="- topic/xref faq/ownerEmail "/>          
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ownerEmail.class" mixed="true">
+    <xs:sequence>
+      <xs:group ref="ownerEmail.content"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="ownerEmail.attributes"/>
+  </xs:complexType>
+  
+  <xs:attributeGroup name="ownerEmail.attributes">
+    <xs:attribute name="href" type="xs:string"/>
+    <xs:attribute name="keyref" type="xs:string"/>
+    <xs:attribute name="type" type="xs:string"/>
+    <xs:attribute name="format" type="xs:string" default="mailto"/>
+    <xs:attribute name="scope">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="external"/>
+          <xs:enumeration value="local"/>
+          <xs:enumeration value="peer"/>
+          <xs:enumeration value="-dita-use-conref-target"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>    
+    <xs:attributeGroup ref="univ-atts"/>    
+    <!--<xs:attributeGroup ref="ishlabelxpath-general-default"/>
+    <xs:attributeGroup ref="ishlinkxpath-general-default"/>
+    <xs:attributeGroup ref="ishhyperlinkxpath-general-default"/>-->
+    <xs:attribute name="outputclass" type="xs:string"/>
+  </xs:attributeGroup>
+  
+  <xs:group name="ownerEmail.content">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name" minOccurs="0"/><!-- type="name.class"  -->
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  
+</xs:schema>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+
+--><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Abbreviated Form Domain-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd:1.3"
+              uri="xsd/concept.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd:1.x"
+              uri="xsd/concept.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd"
+              uri="xsd/concept.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:equationDomain.xsd:1.3"
+              uri="xsd/equationDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:equationDomain.xsd:1.x"
+              uri="xsd/equationDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:equationDomain.xsd"
+              uri="xsd/equationDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.3"
+              uri="xsd/generalTask.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.x"
+              uri="xsd/generalTask.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd"
+              uri="xsd/generalTask.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.3"
+              uri="xsd/glossary.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.x"
+              uri="xsd/glossary.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd"
+              uri="xsd/glossary.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.3"
+              uri="xsd/glossentry.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.x"
+              uri="xsd/glossentry.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd"
+              uri="xsd/glossentry.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.3"
+              uri="xsd/glossgroup.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.x"
+              uri="xsd/glossgroup.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd"
+              uri="xsd/glossgroup.xsd"/>
+      
+      <!-- DITA 1.2 version of the URNs for glossgroup shell. -->
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" uri="xsd/glossgroup.xsd"/>
+     
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/map.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/map.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/map.xsd"/>
+           
+      <system systemId="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd:1.3"
+              uri="xsd/mathmlDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd:1.x"
+              uri="xsd/mathmlDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd"
+              uri="xsd/mathmlDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.3"
+              uri="xsd/programmingDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.x"
+              uri="xsd/programmingDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd"
+              uri="xsd/programmingDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd:1.3"
+              uri="xsd/reference.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd:1.x"
+              uri="xsd/reference.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd"
+              uri="xsd/reference.xsd"/>
+           
+      <system systemId="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.3"
+              uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.x"
+              uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd"
+              uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+           
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/task.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/task.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/task.xsd"/>
+           
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.3"
+                   uri="xsd/taskMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.x"
+                   uri="xsd/taskMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd"
+                   uri="xsd/taskMod.xsd"/>
+
+      <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.3"
+              uri="xsd/troubleshooting.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.x"
+              uri="xsd/troubleshooting.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd"
+              uri="xsd/troubleshooting.xsd"/>
+           
+      <system systemId="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.3"
+              uri="xsd/uiDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.x"
+              uri="xsd/uiDomain.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:uiDomain.xsd"
+              uri="xsd/uiDomain.xsd"/>
+           
+           
+           <!-- ========== BENTLEY SPECIALIZED TOPIC TYPES ================== -->
+           <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd:1.3"
+                   uri="xsd/faq.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd:1.x"
+                   uri="xsd/faq.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd"
+                   uri="xsd/faq.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.3"
+                   uri="xsd/faqGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.x"
+                   uri="xsd/faqGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqGrp.xsd"
+                   uri="xsd/faqGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqMod.xsd:1.3"
+                   uri="xsd/faqMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqMod.xsd:1.x"
+                   uri="xsd/faqMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:faqMod.xsd"
+                   uri="xsd/faqMod.xsd"/>
+           
+           <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd:1.3"
+                   uri="xsd/verification.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd:1.x"
+                   uri="xsd/verification.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd"
+                   uri="xsd/verification.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.3"
+                   uri="xsd/verificationGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.x"
+                   uri="xsd/verificationGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd"
+                   uri="xsd/verificationGrp.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationMod.xsd:1.3"
+                   uri="xsd/verificationMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationMod.xsd:1.x"
+                   uri="xsd/verificationMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:verificationMod.xsd"
+                   uri="xsd/verificationMod.xsd"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd:1.3"
+           uri="xsd/concept.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd:1.x"
+           uri="xsd/concept.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd" uri="xsd/concept.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:equationDomain.xsd:1.3"
+           uri="xsd/equationDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:equationDomain.xsd:1.x"
+           uri="xsd/equationDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:equationDomain.xsd"
+           uri="xsd/equationDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.3"
+           uri="xsd/generalTask.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.x"
+           uri="xsd/generalTask.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd"
+           uri="xsd/generalTask.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.3"
+           uri="xsd/glossary.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.x"
+           uri="xsd/glossary.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd" uri="xsd/glossary.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.3"
+           uri="xsd/glossentry.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.x"
+           uri="xsd/glossentry.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossentry"
+           uri="xsd/glossentry.xsd"/>
+              
+      <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.3"
+           uri="xsd/glossgroup.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.x"
+           uri="xsd/glossgroup.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd"
+           uri="xsd/glossgroup.xsd"/>
+     
+     <!-- DITA 1.2 version of the URNs for glossgroup shell. -->
+     <uri name="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" uri="xsd/glossgroup.xsd"/>   
+     
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/map.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/map.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/map.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd:1.3"
+           uri="xsd/mathmlDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd:1.x"
+           uri="xsd/mathmlDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd"
+           uri="xsd/mathmlDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.3"
+           uri="xsd/programmingDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.x"
+           uri="xsd/programmingDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd"
+           uri="xsd/programmingDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd:1.3"
+           uri="xsd/reference.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd:1.x"
+           uri="xsd/reference.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd"
+           uri="xsd/reference.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.3"
+           uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.x"
+           uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd"
+           uri="xsd/strictTaskbodyConstraintMod.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/task.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/task.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/task.xsd"/>
+           
+           
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.3"
+                   uri="xsd/taskMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.x"
+                   uri="xsd/taskMod.xsd"/>
+           <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd"
+                   uri="xsd/taskMod.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.3"
+           uri="xsd/taskMod.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.x"
+           uri="xsd/taskMod.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:taskMod.xsd" uri="xsd/taskMod.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.3"
+           uri="xsd/troubleshooting.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.x"
+           uri="xsd/troubleshooting.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd"
+           uri="xsd/troubleshooting.xsd"/>
+           
+      <uri name="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.3"
+           uri="xsd/uiDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.x"
+           uri="xsd/uiDomain.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:uiDomain.xsd"
+              uri="xsd/uiDomain.xsd"/>      
+           
+           <!-- ========== BENTLEY SPECIALIZED TOPIC TYPES ================== -->
+           <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd:1.3"
+                   uri="xsd/faq.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd:1.x"
+                   uri="xsd/faq.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd"
+                   uri="xsd/faq.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.3"
+                   uri="xsd/faqGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.x"
+                   uri="xsd/faqGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqGrp.xsd"
+                   uri="xsd/faqGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqMod.xsd:1.3"
+                   uri="xsd/faqMod.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqMod.xsd:1.x"
+                   uri="xsd/faqMod.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:faqMod.xsd"
+                   uri="xsd/faqMod.xsd"/>
+           
+           <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd:1.3"
+                   uri="xsd/verification.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd:1.x"
+                   uri="xsd/verification.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd"
+                   uri="xsd/verification.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.3"
+                   uri="xsd/verificationGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.x"
+                   uri="xsd/verificationGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd"
+                   uri="xsd/verificationGrp.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationMod.xsd:1.3"
+                   uri="xsd/verificationMod.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationMod.xsd:1.x"
+                   uri="xsd/verificationMod.xsd"/>
+           <uri name="urn:bentley:names:tc:dita:xsd:verificationMod.xsd"
+                   uri="xsd/verificationMod.xsd"/>
+           
+   </group>
+</catalog>

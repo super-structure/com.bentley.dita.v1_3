@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--============================================================= -->
+<!--DITA Equation Domain                                         -->
+<!--Purpose: Provides elements for identifying equations as      -->
+<!--         equations independent of how the equation itself    -->
+<!--         is defined (e.g., as a graphic, using MathML, etc.).-->
+<!--                                                             -->
+<!--Creation Date: March 2014                                    -->
+<!--             Copyright (c) Bentley Systems, Incorporated.      -->
+<!--             All rights reserved.                              -->
+<!--Copyright (c) OASIS Open 2014                                -->
+<!--  UPDATES:                                                   -->
+<!-- 2019.09.17 JTC: Added legacy Bentley math domain elements   -->
+<!--                 from DITA v1.2                              -->
+<!--============================================================= -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns:mml="http://www.w3.org/1998/Math/MathML">
+   <xs:import schemaLocation="mathml/mathml3/mathml3.xsd"
+      namespace="http://www.w3.org/1998/Math/MathML"/>
+   <xs:annotation>
+      <xs:appinfo>
+         <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic equation-d)</dita:domainsModule>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:group name="equation-inline">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="equation-inline"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="equation-block">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="equation-block"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="equation-number">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="equation-number"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="equation-figure">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="equation-figure"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <!-- JTC -->
+   <xs:group name="mathph">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="mathph"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="equation">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="equation"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="math">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="math"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="eqsymbols">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="eqsymbols"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="eqsymbol">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="eqsymbol"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="symname">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="symname"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="symdesc">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="symdesc"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   <xs:group name="equation-d-ph">
+      <xs:choice>
+         <xs:element ref="equation-inline"/>
+      </xs:choice>
+   </xs:group>
+   <xs:group name="equation-d-div">
+      <xs:choice>
+         <xs:element ref="equation-block"/>
+      </xs:choice>
+   </xs:group>
+   <xs:group name="equation.cnt">
+      <xs:sequence>
+         <xs:choice>
+            <xs:group ref="ph.cnt"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <!-- JTC: add Bentley legacy math domain elements -->
+   <xs:group name="equation-d-fig">
+      <xs:choice>
+         <xs:element ref="equation-figure"/>
+         <xs:element ref="equation"/>
+      </xs:choice>
+   </xs:group>
+   
+   <xs:group name="equation-d-foreign">
+      <xs:choice>
+         <xs:element ref="math"/>
+         <xs:element ref="mathph"/>
+      </xs:choice>
+   </xs:group>
+   
+   <xs:group name="equation-d-dl">
+      <xs:choice>
+         <xs:element ref="eqsymbols"/>
+      </xs:choice>
+   </xs:group>
+   
+   <xs:element name="equation-inline">
+      <xs:annotation>
+         <xs:documentation> The Inline Equation element (&lt;equation-inline&gt;) represents an
+            equation that is intended to be rendered inline with its surrounding content. The
+            equation content may be represented in any number of ways, including embedded MathML
+            using the &lt;mathml&gt; specialization of &lt;foreign&gt;, a reference to an image,
+            inline TeX markup, or any other way that an equation might be defined. The equation may
+            include alternative forms, such as both a MathML version and an image. </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="equation-inline.class">
+               <xs:attribute ref="class" default="+ topic/ph equation-d/equation-inline "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="equation-inline.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="equation-inline.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="equation-inline.attributes"/>
+   </xs:complexType>
+   <xs:group name="equation-inline.content">
+      <xs:sequence>
+         <xs:group ref="equation.cnt" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="equation-inline.attributes">
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   <xs:element name="equation-block">
+      <xs:annotation>
+         <xs:documentation> The Block Equation element (&lt;equation-block&gt;) represents
+            an equation to be rendered as a block. Block equations may be numbered. The
+            equation content may be represented in any number of ways, including embedded MathML
+            using the &lt;mathml&gt; specialization of &lt;foreign&gt;, a reference to an image,
+            inline TeX markup, or any other way that an equation might be defined. The equation may
+            include alternative forms, such as both a MathML version and an image. </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="equation-block.class">
+               <xs:attribute ref="class" default="+ topic/div equation-d/equation-block "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="equation-block.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="equation-block.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="equation-block.attributes"/>
+   </xs:complexType>
+   <xs:group name="equation-block.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="equation.cnt"/>
+            <xs:group ref="equation-number"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="equation-block.attributes">
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   <xs:element name="equation-number">
+      <xs:annotation>
+         <xs:documentation> The Equation Number element (&lt;equation-number&gt;) indicates
+          that the equation should be numbered. If the &lt;equation-number&gt; element has empty or 
+          whitespace-only content, then the number should be generated. If the &lt;equation-number&gt;
+          element has content other than whitespace, the content should be used as the number.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="equation-number.class">
+               <xs:attribute ref="class" default="+ topic/ph equation-d/equation-number "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="equation-number.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="equation-number.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="equation-number.attributes"/>
+   </xs:complexType>
+   <xs:group name="equation-number.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="ph"/>
+            <xs:group ref="text"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="equation-number.attributes">
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   <xs:element name="equation-figure">
+      <xs:annotation>
+         <xs:documentation> The Equation Figure element (&lt;equation-figure&gt;) represents an
+            equation that may have a title or a description and that may be numbered. When equation
+            figures are numbered they are often numbered separately from figures. Note that block
+            and inline equations may also be numbered. The equation figure element is intended for
+            equations that are not part of the rhetorical flow of a document but that are presented
+            either out of line or otherwise need a title or description. Equation figures that are
+            simply a single equation plus, optionally, a title or description, may use the
+            &lt;mathml&gt; element directly. When the display equation content is more complicated,
+            it should use &gt;equation-block&gt; to clearly distinguish the equation content from
+            non-equation content, such as paragraphs that provide commentary on the equations within
+            the display equation. The equation content may be represented in any number of ways,
+            including embedded MathML using the &lt;mathml&gt; specialization of &lt;foreign&gt;, a
+            reference to an image, inline TeX markup, or any other way that an equation might be
+            defined. The equation may include alternative forms, such as both a MathML version and
+            an image. </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="equation-figure.class">
+               <xs:attribute ref="class" default="+ topic/fig equation-d/equation-figure "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="equation-figure.class">
+      <xs:sequence>
+         <xs:group ref="equation-figure.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="equation-figure.attributes"/>
+   </xs:complexType>
+   <xs:group name="equation-figure.content">
+      <xs:sequence>
+         <xs:group ref="title" minOccurs="0"/>
+         <xs:group ref="desc" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="figgroup"/>
+            <xs:group ref="fig.cnt"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="equation-figure.attributes">
+      <xs:attributeGroup ref="display-atts"/>
+      <xs:attribute name="spectitle" type="xs:string"/>
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   
+   
+   
+   <!--                    LONG NAME: Math Phrase			           -->
+   <xs:element name="mathph">
+      <xs:annotation>
+         <xs:documentation>
+            The math phrase (&lt;mathph&gt;) element contains an inline section of math text or image. 
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="mathph.class">
+               <xs:attribute ref="class" default="+ topic/foreign equation-d/mathph "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="mathph.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="mathph.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="mathph.attributes"/>
+   </xs:complexType>
+   
+   <xs:group name="mathph.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="words.cnt"/>
+            <xs:group ref="hi-d-ph"/>
+            <xs:group ref="image"/>
+            <xs:element ref="mml:math"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:attributeGroup name="mathph.attributes">
+      <xs:attribute name="keyref" type="xs:string"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+      <xs:attributeGroup ref="univ-atts"/>
+   </xs:attributeGroup>
+   
+   <!--                    LONG NAME: Math			                    -->
+   <xs:element name="math">
+      <xs:annotation>
+         <xs:documentation>
+            The math (&lt;math&gt;) element is a block or text or an image which represents an entire mathematical expression or equation. 
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="math.class">
+               <xs:attribute ref="class" default="+ topic/foreign equation-d/math "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="math.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="math.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="math.attributes"/>
+   </xs:complexType>
+   
+   <xs:group name="math.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="para.cnt"/>
+            <xs:element ref="mml:math"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:attributeGroup name="math.attributes">
+      <xs:attribute name="keyref" type="xs:string"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+      <xs:attributeGroup ref="univ-atts"/>
+   </xs:attributeGroup>
+   
+   <!--                    LONG NAME: Equation 						-->  
+   <xs:element name="equation">
+      <xs:annotation>
+         <xs:documentation>
+            The equation (&lt;equation&gt;) element is a block or text or an image which represents an entire mathematical expression or equation. 
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="equation.class">
+               <xs:attribute ref="class" default="+ topic/fig equation-d/equation "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="equation.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="equation.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="equation.attributes"/>
+   </xs:complexType>
+   
+   <xs:group name="equation.content">
+      <xs:sequence>
+         <xs:group ref="title" minOccurs="0"/>
+         <xs:group ref="desc" minOccurs="0"/>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="math" minOccurs="0"/>
+            <xs:group ref="eqsymbols" minOccurs="0"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:attributeGroup name="equation.attributes">
+      <!-- xs:attribute name="keyref" type="xs:string"/ -->
+      <xs:attribute name="spectitle" type="xs:string"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="display-atts"/>
+      <xs:attributeGroup ref="univ-atts"/>
+   </xs:attributeGroup>
+   
+   <!--                    LONG NAME: Equation Symbol List            -->
+   <xs:element name="eqsymbols">
+      <xs:annotation>
+         <xs:documentation>
+            The equation symbols (&lt;eqsymbols&gt;) element contains a list of mathematical symbols and definitions used an equation.
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="eqsymbols.class">
+               <xs:attribute ref="class" default="+ topic/dl equation-d/eqsymbols "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="eqsymbols.class">
+      <xs:sequence>
+         <xs:group ref="eqsymbols.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="eqsymbols.attributes"/>
+   </xs:complexType>
+   <xs:group name="eqsymbols.content">
+      <xs:sequence>
+         <xs:group ref="eqsymbol" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:attributeGroup name="eqsymbols.attributes">
+      <xs:attribute name="compact">
+         <xs:simpleType>
+            <xs:restriction base="xs:string">
+               <xs:enumeration value="no"/>
+               <xs:enumeration value="yes"/>
+               <xs:enumeration value="-dita-use-conref-target"/>
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="spectitle" type="xs:string"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   
+   <!--                    LONG NAME: Equation Symbol List Entry      -->
+   <xs:element name="eqsymbol">
+      <xs:annotation>
+         <xs:documentation>
+            The equation symbols entry (&lt;eqsymbol&gt;) element contains one or more mathematical symbol and definition pairs. 
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="eqsymbol.class">
+               <xs:attribute ref="class" default="+ topic/dlentry equation-d/eqsymbol "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="eqsymbol.class">
+      <xs:sequence>
+         <xs:group ref="eqsymbol.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="eqsymbol.attributes"/>
+   </xs:complexType>
+   
+   <xs:group name="eqsymbol.content">
+      <xs:sequence>
+         <xs:sequence>
+            <xs:group ref="symname" maxOccurs="unbounded"/>
+            <xs:group ref="symdesc" maxOccurs="unbounded"/>
+         </xs:sequence>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="eqsymbol.attributes">
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   
+   <!--                    LONG NAME: Symbol Name	                   -->
+   <xs:element name="symname">
+      <xs:annotation>
+         <xs:documentation>
+            A symbol name (&lt;symname&gt;) element contains a single mathematical symbol within a &lt;eqsymbols&gt; list.
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType mixed="true">
+         <xs:complexContent mixed="true">
+            <xs:extension base="symname.class">
+               <xs:attribute ref="class" default="+ topic/dt equation-d/symname "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="symname.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="symname.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="symname.attributes"/>
+   </xs:complexType>
+   <xs:group name="symname.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="term.cnt" minOccurs="0"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="symname.attributes">
+      <xs:attribute name="keyref" type="xs:string"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   <!--                    LONG NAME: Symbol Description              -->
+   <xs:element name="symdesc">
+      <xs:annotation>
+         <xs:documentation>
+            A symbol description (&lt;symdesc&gt;) element contains the description of the related mathematical symbol within a &lt;eqsymbols&gt; list. 
+         </xs:documentation>
+      </xs:annotation>
+      <xs:complexType mixed="true">
+         <xs:complexContent mixed="true">
+            <xs:extension base="symdesc.class">
+               <xs:attribute ref="class" default="+ topic/dd equation-d/symdesc "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="symdesc.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="symdesc.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="symdesc.attributes"/>
+   </xs:complexType>
+   <xs:group name="symdesc.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="defn.cnt" minOccurs="0"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="symdesc.attributes">
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="univ-atts"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>                                                                        
+</xs:schema>
