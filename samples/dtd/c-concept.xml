@@ -59,7 +59,7 @@
    <p>An <codeph>&lt;equation-block&gt;</codeph> element containing MathML markup:</p>
   <equation-block id="equation-block_p2c_xxd_cjb">
    <mathml>
-    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="GUID-8F13F947-884D-43D1-9F7F-4DF8CFFECCF1">
+    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="GUID-8F13F947-884D-43D1-9F7F-4DF8CFFECCF2">
 				<mml:msup> <mml:mi>a</mml:mi>
 				<mml:mn>2</mml:mn> </mml:msup> <mml:msup>
 				<mml:mrow> <mml:mo>+</mml:mo> <mml:mi>b</mml:mi> </mml:mrow> <mml:mn>2</mml:mn> </mml:msup>
