@@ -1,9 +1,15 @@
-![Bentley logo](image/blogo.gif)
+![Bentley logo](image/blogo.jpg)
 # Bentley DITA V1.3 DocTypes
 
 2019-09-18
 
 This plug-in contains DTDs for Bentley's specializations of DITA v1.3 topics and maps. These are only shells and custom domains. 
+
+## Installation
+
+At the command line prompt, enter the following command:
+
+```dita install https://github.com/super-structure/com.bentley.dita.v1_3/releases/download/v1.0.1/com.bentley.dita.v1_3.zip```
 
 ## Notes
 
