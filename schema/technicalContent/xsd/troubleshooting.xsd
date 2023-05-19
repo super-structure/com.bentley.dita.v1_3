@@ -22,6 +22,8 @@
 <!--                                                               -->
 <!-- ORIGINAL CREATION DATE:                                       -->
 <!--            March 2014                                         -->
+<!--  UPDATES:                                                     -->
+<!--    2023.05.19 JTC: Removed Bentley Math Domain customizations -->
 <!--                                                               -->
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
@@ -30,10 +32,12 @@
            attributeFormDefault="unqualified">
    <!-- ================ TOPIC DOMAINS ===================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:abbreviateDomain.xsd:1.3"/>
+   <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:equationDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:deliveryTargetAttDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:hazardDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:indexingDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:markupDomain.xsd:1.3"/>
+   <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:mathmlDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:releaseManagementDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:softwareDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:svgDomain.xsd:1.3"/>
@@ -41,9 +45,7 @@
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:xmlDomain.xsd:1.3"/>
    
    <!-- JTC: Use BENTLEY entities for specialized domains -->   
-   <xs:include schemaLocation="urn:bentley:names:tc:dita:xsd:equationDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:bentley:names:tc:dita:xsd:highlightDomain.xsd:1.3"/>
-   <xs:include schemaLocation="urn:bentley:names:tc:dita:xsd:mathmlDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.3"/>
    
@@ -69,10 +71,23 @@
             <xs:group ref="ut-d-data"/>
          </xs:choice>
       </xs:group>
+      <xs:group name="foreign">
+         <xs:choice>
+            <xs:group ref="foreign"/>
+            <xs:group ref="mathml-d-foreign"/>
+            <xs:group ref="svg-d-foreign"/>
+         </xs:choice>
+      </xs:group>
       <xs:group name="note">
          <xs:choice>
             <xs:group ref="note"/>
             <xs:group ref="hazard-d-note"/>
+         </xs:choice>
+      </xs:group>
+      <xs:group name="dl">
+         <xs:choice>
+            <xs:group ref="dl"/>
+            <xs:group ref="pr-d-dl"/>
          </xs:choice>
       </xs:group>
       <xs:group name="fig">
@@ -131,28 +146,13 @@
       </xs:group>
       
       <!-- 2019-09-17 JTC: Added Bentley domain specializations -->
-      <xs:group name="dl">
-         <xs:choice>
-            <xs:group ref="dl"/>
-            <xs:group ref="pr-d-dl"/>
-            <xs:group ref="equation-d-dl"/>
-         </xs:choice>
-      </xs:group>
       <xs:group name="figgroup">
          <xs:choice>
             <xs:group ref="figgroup"/>
             <xs:group ref="pr-d-figgroup"/>
          </xs:choice>
       </xs:group>
-      <xs:group name="foreign">
-         <xs:choice>
-            <xs:group ref="foreign"/>
-            <xs:group ref="mathml-d-foreign"/>
-            <xs:group ref="svg-d-foreign"/>
-            <xs:group ref="equation-d-foreign"/>
-         </xs:choice>
-      </xs:group>
-     
+      
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>
