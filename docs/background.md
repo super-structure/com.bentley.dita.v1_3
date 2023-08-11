@@ -1,6 +1,6 @@
 # Background on Bentley Systems' DITA v1.3
 
-Jason Coleman - 2019-09-17
+Jason Coleman - 2019-09-17; updated 2023-05-19
 
 In the first half of 2013, Bentley Systems, Inc migrated its DITA documentation from DITA v1.1 to DITA v1.2. We had previously used a specialized set of SDL’s already specialized DocTypes in v1.1. However, based on publications from Eliot Kimber at the time (1), it was decided that creating a separate set of shell DocTypes and XML Schema files was the best practice to follow. At this time, several specialized topic types were also introduced to accommodate some of Bentley’s expanding documentation needs.
 
@@ -40,9 +40,10 @@ We have also modified the structure of the task topic type to allow for choice l
 
 ## Specialized Domains
 
-The following domains have been specialized in Bentley’s DocTypes:
+The following domains have been specialized in Bentley’s grammar files. The following is presented as an overview of the decision process used, as well as the final results for the Bentley DITA v1.3 grammar.
 
 ### Highlighting Domain
+
 This domain was removed entirely. The `<sub>` and `<sup>` elements were re-added as part of our Math domain. The constraint on these elements is no longer seen as necessary in DITA v1.3, though.
 
 ### Math Domain
@@ -57,7 +58,7 @@ For DITA v1.3, it seems likely that the elements used could either:
 * Be included within the Equation domain. The `<eqsymbols>` and children would need to be added.
 * Or, mapped to existing Equation domain elements (`<mathph>` mapped to `<equation-inline>`) and the content be converted either during CMS database migration or individually upon checkout. This last option would probably be necessary for authoring content in some editors (e.g., web-based editors)
 
-The MathML domain would include the need for mathml elements. However, it does need to be modified somehow that will accept the “mml:” namespace instead of or in addition to the “m:” namespace.
+In the interest of modifying *as little* of the base OASIS DITA as possible, the Bentley DITA v1.2 Math domain has just been mapped to the OASIS DITA v1.3 Equation domain. The `<eqsymbols>` are simply mapped to a `<dl>` within a `<equation-figure>` element with an `@outputclass` value added for controlling the display. Further, the 'legacy' mml: namespace prefix has been mapped to the 'standard' m: namespace prefix.
 
 ### Programming Domain
 
@@ -69,7 +70,7 @@ This domain was included for the sole purpose of including an “emphasis” ele
 
 The emphasis element is simply a specialization of the `<ph>` element, but the processing for multiple localizations is the crucial part of why it exists.
 
-For DITA v1.3, this domain could be included, or the element could simply be included in the highlighting or some other domain that seems most appropriate.
+For DITA v1.3, this domain was elimanted and the lone element was simply be included in the highlighting domain.
 
 ### UI Domain
 

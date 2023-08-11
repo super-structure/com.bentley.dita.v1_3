@@ -56,7 +56,8 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
    2008.04.15 RDA: Added hazard domain                       
    2014.03.12 RDA: Updated for DITA 1.3. Implemented as     
                    RELAX NG
-   2019.09.16 JTC: Created shell for Bentley                 
+   2019.09.16 JTC: Created shell for Bentley   
+   2023.05.19 JTC: Removed Bentley Math Domain customizations
 =============================================================
   </headerComment>
     <moduleMetadata>
@@ -112,10 +113,12 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       </define>
     </include>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/abbreviateDomain.rng"/>
+    <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/equationDomain.rng" dita:since="1.3"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/base/rng/deliveryTargetAttDomain.rng" dita:since="1.3"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/base/rng/hazardstatementDomain.rng"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/base/rng/indexingDomain.rng"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/markupDomain.rng" dita:since="1.3"/>
+    <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/mathmlDomain.rng" dita:since="1.3"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/releaseManagementDomain.rng" dita:since="1.3"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/softwareDomain.rng"/>
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/svgDomain.rng" dita:since="1.3"/>
@@ -123,9 +126,7 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
     <include href="../../../../org.oasis-open.dita.v1_3/rng/technicalContent/rng/xmlDomain.rng"/>
   
     <!-- JTC: Use BENTLEY speicalized domain elements -->
-    <include href="equationDomain.rng" dita:since="1.3"/>
     <include href="../../base/rng/highlightDomain.rng"/>
-    <include href="mathmlDomain.rng" dita:since="1.3"/>
     <include href="programmingDomain.rng"/>
     <include href="uiDomain.rng"/>
   </div>
