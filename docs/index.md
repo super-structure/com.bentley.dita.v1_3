@@ -4,7 +4,7 @@ To be completed.
 
 ## Base grammar
 
-* Add the `<em>` element to the highlighting domain.
+* Add [the `<em>` element](em.md) to the highlighting domain.
 
 ## Bookmaps
 
@@ -12,9 +12,9 @@ To be completed.
 
 ## Technical Content
 
+* Add [verification topic type](verification.md) specialization
+* Add [the `<keyin>`](keyin.md) and [`<kwdchoice>` elements](kwdchoice.md) to the programming domain
+* Add [the `<kbd>` element](kbd.md) to the UI domain
 * Shell for concept, faq, glossary, reference, task, and troubleshooting topic types
 * Task structure modified to allow for `<choices>` and `<choicetable>` within substeps
 * Shell for maps
-* Add verification topic type specialization
-* Add the `<keyin>` and `<kwdchoice>` element to the programming domain
-* Add the `<kbd>` element to the UI domain
