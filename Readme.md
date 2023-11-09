@@ -1,4 +1,4 @@
-![Bentley logo](image/blogo.jpg)
+![Bentley logo](image/Bentley_logo.svg)
 # Bentley DITA V1.3 DocTypes
 
 2023-05-19
