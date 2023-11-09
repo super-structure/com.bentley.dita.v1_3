@@ -16,6 +16,5 @@ To be completed.
 * Task structure modified to allow for `<choices>` and `<choicetable>` within substeps
 * Shell for maps
 * Add verification topic type specialization
-* Add the legacy math elements to the equation domain
 * Add the `<keyin>` and `<kwdchoice>` element to the programming domain
 * Add the `<kbd>` element to the UI domain

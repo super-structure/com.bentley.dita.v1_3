@@ -26,6 +26,7 @@
 <!--                                                               -->
 <!--  UPDATES:                                                     -->
 <!--    2019.09.20 JTC: Created shell for Bentley                  -->
+<!--    2023.05.19 JTC: Removed Bentley Math Domain customizations -->
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -33,10 +34,12 @@
            attributeFormDefault="unqualified">
    <!-- ================ TOPIC DOMAINS ===================== -->
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/abbreviateDomain.xsd"/>
+   <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/equationDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/base/xsd/deliveryTargetAttDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/base/xsd/hazardStatementDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/base/xsd/indexingDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/markupDomain.xsd"/>
+   <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/mathmlDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/releaseManagementDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/softwareDomain.xsd"/>
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/svgDomain.xsd"/>
@@ -44,9 +47,7 @@
    <xs:include schemaLocation="../../../../org.oasis-open.dita.v1_3/schema-url/technicalContent/xsd/xmlDomain.xsd"/>
    
    <!-- JTC: Use BENTLEY entities for specialized domains -->   
-   <xs:include schemaLocation="equationDomain.xsd"/>
    <xs:include schemaLocation="../../base/xsd/highlightDomain.xsd"/>
-   <xs:include schemaLocation="mathmlDomain.xsd"/>
    <xs:include schemaLocation="programmingDomain.xsd"/>
    <xs:include schemaLocation="uiDomain.xsd"/>
    
@@ -71,10 +72,23 @@
             <xs:group ref="ut-d-data"/>
          </xs:choice>
       </xs:group>
+      <xs:group name="foreign">
+         <xs:choice>
+            <xs:group ref="foreign"/>
+            <xs:group ref="mathml-d-foreign"/>
+            <xs:group ref="svg-d-foreign"/>
+         </xs:choice>
+      </xs:group>
       <xs:group name="note">
          <xs:choice>
             <xs:group ref="note"/>
             <xs:group ref="hazard-d-note"/>
+         </xs:choice>
+      </xs:group>
+      <xs:group name="dl">
+         <xs:choice>
+            <xs:group ref="dl"/>
+            <xs:group ref="pr-d-dl"/>
          </xs:choice>
       </xs:group>
       <xs:group name="fig">
@@ -133,25 +147,10 @@
       </xs:group>
       
       <!-- 2019-09-17 JTC: Added Bentley domain specializations -->
-      <xs:group name="dl">
-         <xs:choice>
-            <xs:group ref="dl"/>
-            <xs:group ref="pr-d-dl"/>
-            <xs:group ref="equation-d-dl"/>
-         </xs:choice>
-      </xs:group>
       <xs:group name="figgroup">
          <xs:choice>
             <xs:group ref="figgroup"/>
             <xs:group ref="pr-d-figgroup"/>
-         </xs:choice>
-      </xs:group>
-      <xs:group name="foreign">
-         <xs:choice>
-            <xs:group ref="foreign"/>
-            <xs:group ref="mathml-d-foreign"/>
-            <xs:group ref="svg-d-foreign"/>
-            <xs:group ref="equation-d-foreign"/>
          </xs:choice>
       </xs:group>
       
