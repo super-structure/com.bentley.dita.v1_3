@@ -5,6 +5,7 @@
  <topicmeta>
   <author>Jason Coleman</author>
  </topicmeta>
+ <topicref href="base_topic.dita" format="dita" navtitle="Base Topic"/>
  <topicref href="c-concept.xml" format="dita" navtitle="Concept"/>
  <topicref href="f-faq.xml" format="dita" navtitle="FAQ"/>
  <topicref href="r-reference.xml" format="dita" navtitle="Reference"/>
