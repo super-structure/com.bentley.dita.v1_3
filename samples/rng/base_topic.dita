@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model name="urn:bentley:names:tc:dita:rng:topic.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<topic id="base_topic">
+    <title>Base Topic</title>
+    <shortdesc>This topic uses the Bentley Topic DocType.</shortdesc>
+    <body>
+        <section>
+            <title>Highlighting Domain</title>
+            
+            <p>Now <em>this</em> is some emphasis!</p>
+            
+        </section>
+        <section>
+            <title>UI Domain</title>
+            <p>Press <kbd>Ctrl+O</kbd> to open a new document.</p>
+        </section>
+        <section id="section_ljy_s5l_d1c">
+            <title>Programming Domain</title>
+            <syntaxdiagram id="syntaxdiagram_mjy_s5l_d1c">
+                <keyin>
+                    <kwd>Place Fence</kwd>
+                    <kwdchoice>
+                        <kwd>Block</kwd>
+                        <kwd>Circle</kwd>
+                    </kwdchoice>
+                </keyin>
+            </syntaxdiagram>
+        </section>
+    </body>
+</topic>

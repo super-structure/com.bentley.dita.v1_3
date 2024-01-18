@@ -3,9 +3,6 @@
 <project xmlns="https://www.dita-ot.org/project">
   <context name="Sample Bentley DTD Topics" id="html">
     <input href="../rng/m-map.xml"/>
-    <!--<profile>
-      <ditaval href="../../resources/html.ditaval"/>
-    </profile>-->
   </context>
   <deliverable name="HTML5" id="html">
     <context idref="html"/>
