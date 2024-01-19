@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model name="urn:bentley:names:tc:dita:rng:topic.rng" schematypens="https://relaxng.org/ns/structure/1.0?>
+<?xml-model href="urn:bentley:names:tc:dita:rng:topic.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <topic id="base_topic">
     <title>Base Topic</title>
     <shortdesc>This topic uses the Bentley Topic DocType.</shortdesc>

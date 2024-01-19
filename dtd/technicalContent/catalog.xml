@@ -6,42 +6,42 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
 -->
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <!--DITA Technical Content modules-->
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Topic//EN" uri="dtd/topic.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Topic//EN" uri="dtd/topic.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Topic//EN" uri="dtd/topic.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Topic//EN" uri="dtd/bentley-topic.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Topic//EN" uri="dtd/bentley-topic.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Topic//EN" uri="dtd/bentley-topic.dtd"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Concept//EN" uri="dtd/concept.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Concept//EN" uri="dtd/concept.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Concept//EN" uri="dtd/concept.dtd"/> 
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Concept//EN" uri="dtd/bentley-concept.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Concept//EN" uri="dtd/bentley-concept.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Concept//EN" uri="dtd/bentley-concept.dtd"/> 
               
    <public publicId="-//BENTLEY//DTD DITA 1.3 General Task//EN"
-           uri="dtd/generalTask.dtd"/>
+           uri="dtd/bentley-generalTask.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA 1.x General Task//EN"
-           uri="dtd/generalTask.dtd"/>
+           uri="dtd/bentley-generalTask.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA General Task//EN"
-           uri="dtd/generalTask.dtd"/>
+           uri="dtd/bentley-generalTask.dtd"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Glossary//EN" uri="dtd/glossary.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Glossary//EN" uri="dtd/glossary.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Glossary//EN" uri="dtd/glossary.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Glossary//EN" uri="dtd/bentley-glossary.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Glossary//EN" uri="dtd/bentley-glossary.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Glossary//EN" uri="dtd/bentley-glossary.dtd"/>
         
    <public publicId="-//BENTLEY//DTD DITA 1.3 Glossary Entry//EN"
-           uri="dtd/glossentry.dtd"/>
+           uri="dtd/bentley-glossentry.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA 1.x Glossary Entry//EN"
-           uri="dtd/glossentry.dtd"/>
+           uri="dtd/bentley-glossentry.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA Glossary Entry//EN"
-           uri="dtd/glossentry.dtd"/>
+           uri="dtd/bentley-glossentry.dtd"/>
         
    <public publicId="-//BENTLEY//DTD DITA 1.3 Glossary Group//EN"
-           uri="dtd/glossgroup.dtd"/>
+           uri="dtd/bentley-glossgroup.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA 1.x Glossary Group//EN"
-           uri="dtd/glossgroup.dtd"/>
+           uri="dtd/bentley-glossgroup.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA Glossary Group//EN"
-           uri="dtd/glossgroup.dtd"/>
+           uri="dtd/bentley-glossgroup.dtd"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Map//EN" uri="dtd/map.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Map//EN" uri="dtd/map.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Map//EN" uri="dtd/map.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Map//EN" uri="dtd/bentley-map.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Map//EN" uri="dtd/bentley-map.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Map//EN" uri="dtd/bentley-map.dtd"/>
         
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.3 Programming Domain//EN"
            uri="dtd/programmingDomain.mod"/>
@@ -56,23 +56,24 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
    <public publicId="-//BENTLEY//ENTITIES DITA Programming Domain//EN"
            uri="dtd/programmingDomain.ent"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Reference//EN" uri="dtd/reference.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Reference//EN" uri="dtd/reference.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Reference//EN" uri="dtd/reference.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Reference//EN" uri="dtd/bentley-reference.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Reference//EN" uri="dtd/bentley-reference.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Reference//EN" uri="dtd/bentley-reference.dtd"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Task//EN" uri="dtd/task.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Task//EN" uri="dtd/task.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Task//EN" uri="dtd/task.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Task//EN" uri="dtd/bentley-task.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Task//EN" uri="dtd/bentley-task.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Task//EN" uri="dtd/bentley-task.dtd"/>
+        
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.3 Task//EN" uri="dtd/task.mod"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.x Task//EN" uri="dtd/task.mod"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA Task//EN" uri="dtd/task.mod"/>
         
    <public publicId="-//BENTLEY//DTD DITA 1.3 Troubleshooting//EN"
-           uri="dtd/troubleshooting.dtd"/>
+           uri="dtd/bentley-troubleshooting.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA 1.x Troubleshooting//EN"
-           uri="dtd/troubleshooting.dtd"/>
+           uri="dtd/bentley-troubleshooting.dtd"/>
    <public publicId="-//BENTLEY//DTD DITA Troubleshooting//EN"
-           uri="dtd/troubleshooting.dtd"/>
+           uri="dtd/bentley-troubleshooting.dtd"/>
         
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.3 User Interface Domain//EN"
            uri="dtd/uiDomain.mod"/>
@@ -88,9 +89,9 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
            uri="dtd/uiDomain.ent"/>
         
     <!-- ========== BENTLEY SPECIALIZED TOPIC TYPES ================== -->        
-   <public publicId="-//BENTLEY//DTD DITA 1.3 Verification//EN" uri="dtd/verification.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x Verification//EN" uri="dtd/verification.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA Verification//EN" uri="dtd/verification.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 Verification//EN" uri="dtd/bentley-verification.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x Verification//EN" uri="dtd/bentley-verification.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA Verification//EN" uri="dtd/bentley-verification.dtd"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.3 Verification//EN"
            uri="dtd/verification.mod"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.x Verification//EN"
@@ -102,9 +103,9 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
            uri="dtd/verification.ent"/>
    <public publicId="-//BENTLEY//ENTITIES DITA Verification//EN" uri="dtd/verification.ent"/>
         
-   <public publicId="-//BENTLEY//DTD DITA 1.3 FAQ//EN" uri="dtd/faq.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA 1.x FAQ//EN" uri="dtd/faq.dtd"/>
-   <public publicId="-//BENTLEY//DTD DITA FAQ//EN" uri="dtd/faq.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.3 FAQ//EN" uri="dtd/bentley-faq.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA 1.x FAQ//EN" uri="dtd/bentley-faq.dtd"/>
+   <public publicId="-//BENTLEY//DTD DITA FAQ//EN" uri="dtd/bentley-faq.dtd"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.3 FAQ//EN"
            uri="dtd/faq.mod"/>
    <public publicId="-//BENTLEY//ELEMENTS DITA 1.x FAQ//EN"

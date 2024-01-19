@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:xsd:glossentry.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="urn:bentley:names:tc:dita:xsd:glossentry.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="glossentry_rc5_jzf_yn">
+ <glossterm>Glossary</glossterm>
+ <glossdef>A collection of terminology for reference.</glossdef>
+ <prolog>
+  <metadata>
+   <keywords>
+    <indexterm>glossentry</indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <glossBody>
+  
+  <note>Additional glossary term information can be contained within the body of this topic
+   type.</note>
+ </glossBody>
+</glossentry>

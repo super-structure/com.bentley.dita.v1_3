@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//BENTLEY//DTD DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//BENTLEY//DTD DITA Topic//EN" "bentley-topic.dtd">
 <topic id="base_topic">
     <title>Base Topic</title>
     <shortdesc>This topic uses the Bentley Topic DocType.</shortdesc>

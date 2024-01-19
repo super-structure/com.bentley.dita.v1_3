@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model name="urn:bentley:names:tc:dita:xsd:topic.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="urn:bentley:names:tc:dita:xsd:topic.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <topic id="base_topic">
     <title>Base Topic</title>
     <shortdesc>This topic uses the Bentley Topic DocType.</shortdesc>

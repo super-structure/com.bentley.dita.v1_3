@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-model name="urn:bentley:names:tc:dita:xsd:bookmap.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="urn:bentley:names:tc:dita:xsd:bookmap.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Product Name</mainbooktitle>
+        <booktitlealt>Book Type Title</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <othermeta name="numbering" content="1"/>
+    </bookmeta>
+    <frontmatter>
+        <notices></notices>
+        <booklists>
+            <toc></toc>
+        </booklists>
+    </frontmatter>
+    <chapter href="m-map.xml" format="ditamap"/>
+</bookmap>

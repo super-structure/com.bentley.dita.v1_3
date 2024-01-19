@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <meta>
+        <filters directoryPatterns="" filePatterns="\Qcom.bentley.dita.v!_3.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="com.bentley.dita.v!_3.xpr">
+        <folder masterFiles="true" name="Main Files">
+            <file name="catalog.xml"/>
+            <file name="dtd/bookmap/catalog.xml"/>
+            <file name="plugin.xml"/>
+        </folder>
+        <folder path="."/>
+    </projectTree>
+</project>
