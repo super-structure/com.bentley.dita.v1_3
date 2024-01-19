@@ -50,12 +50,12 @@
             <step>
                 <cmd>Equation &amp; Math Domain:</cmd>
                 <info>
-                    <p>A legacy block equation with MathML content:</p>
-   <equation-block>
-       <mathml xmlns:m="http://www.w3.org/1998/Math/MathML">
-           <m:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:msup><m:mrow><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:math>    
-       </mathml>
-   </equation-block>
+                    <p>An equation block with MathML content:</p>
+                    <equation-block>
+                        <mathml>
+                            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" displaystyle="true"><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:msup><m:mrow><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:math>    
+                        </mathml>
+                    </equation-block>
                 </info>
             </step>
             <step>

@@ -41,10 +41,12 @@
         <title>Solution 2</title> 
         <steps-informal>
           <p>A less formal method of describing a solution.</p>
-          <p>A legacy block equation with MathML content:</p>
-   <math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo>-</mml:mo><mml:mi>b</mml:mi><mml:mo>±</mml:mo><mml:msqrt><mml:msup><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:mn>4</mml:mn><mml:mi>a</mml:mi><mml:mi>c</mml:mi></mml:msqrt></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>a</mml:mi></mml:mrow></mml:mfrac></mml:math>    
-   </math>
+          <p>An equation block with MathML content:</p>
+          <equation-block>
+            <mathml>
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" displaystyle="true"><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt><m:msup><m:mrow><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:msqrt></m:mrow><m:mrow><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:mfrac></m:math>    
+            </mathml>
+          </equation-block>
         </steps-informal>
       </remedy>
     </troubleSolution>
