@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:glossentry.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:glossentry.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="glossentry_rc5_jzf_yn">
+<glossentry id="glossentry_rc5_jzf_yn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:glossentry.xsd">
  <glossterm>Glossary</glossterm>
  <glossdef>A collection of terminology for reference.</glossdef>
  <prolog>

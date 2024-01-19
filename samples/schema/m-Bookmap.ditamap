@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:bookmap.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:bookmap.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<bookmap>
+<bookmap id="bookemap_example" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:bookmap.xsd">
     <booktitle>
         <mainbooktitle>Product Name</mainbooktitle>
         <booktitlealt>Book Type Title</booktitlealt>
@@ -15,5 +14,5 @@
             <toc></toc>
         </booklists>
     </frontmatter>
-    <chapter href="m-map.xml" format="ditamap"/>
+    <chapter href="m-map.ditamap" format="ditamap"/>
 </bookmap>

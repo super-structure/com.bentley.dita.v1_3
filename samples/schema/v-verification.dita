@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:verification.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:verification.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<verification id="BENTLEYVERIFICATIONTEMPLATE" xml:lang="en">
+<verification id="BENTLEYVERIFICATIONTEMPLATE" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:verification.xsd">
  <title>Verification</title>
- <shortdesc>This topic uses the Bentley Verification specialized topic  Relax NG schema.</shortdesc>
+ <shortdesc>This topic uses the Bentley Verification specialized topic XML schema.</shortdesc>
  <prolog>
   <author>Joaquin.Vera</author>
   <author>Jason.Coleman</author>

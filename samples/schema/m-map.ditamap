@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:map.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:map.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<map id="MAP_EXAMPLE-RNG">
+<map id="MAP_EXAMPLE-RNG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:map.xsd">
  <title>DITA Topic Map</title>
  <topicmeta>
   <author>Jason Coleman</author>

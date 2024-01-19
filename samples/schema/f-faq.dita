@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:faq.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:faq.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<faq id="faq-template" xml:lang="en-us">
+<faq id="faq-template" xml:lang="en-us"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:faq.xsd">
   <title>FAQ</title>
-  <shortdesc>This topic uses the Bentley FAQ Topic Relax NG schema.</shortdesc>
+  <shortdesc>This topic uses the Bentley FAQ Topic XML schema.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -12,29 +12,31 @@
     </metadata>
   </prolog>
   <faqbody>
-    <faqgroup>
+    <faqgroup class="- topic/section faq/faqgroup ">
       <title>Question Set 1</title>
-      <faqlist>
-        <faqitem>
+      <faqlist class="- topic/simpletable faq/faqlist ">
+        <faqitem class="- topic/strow faq/faqitem ">
           <faqquest>Question 1</faqquest>
           <faqans>Answer 1</faqans>
           <faqprop></faqprop>
         </faqitem>
-        <faqitem>
+        <faqitem class="- topic/strow faq/faqitem ">
           <faqquest>Question 2</faqquest>
           <faqans>Answer 2</faqans>
-          <faqprop><ownerEmail href="email.address@your.com"><name>User Name</name></ownerEmail></faqprop>
+          <faqprop><ownerEmail class="- topic/xref faq/ownerEmail " format="mailto"
+            scope="external"
+            href="email.address@your.com"><name>User Name</name></ownerEmail></faqprop>
         </faqitem>
       </faqlist>
     </faqgroup>
-    <faqgroup>
+    <faqgroup class="- topic/section faq/faqgroup ">
       <title>A Second Group of Questions</title>
-      <faqlist>
-        <faqitem>
+      <faqlist class="- topic/simpletable faq/faqlist ">
+        <faqitem class="- topic/strow faq/faqitem ">
           <faqquest>Question 1</faqquest>
           <faqans>Answer 1</faqans>
         </faqitem>
-        <faqitem>
+        <faqitem class="- topic/strow faq/faqitem ">
           <faqquest>Question 2</faqquest>
           <faqans>Answer 2</faqans>
         </faqitem>

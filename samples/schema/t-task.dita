@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:task.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?
-<?xml-model href="urn:bentley:names:tc:dita:xsd:task.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<task id="task_q1d_pzf_yn">
+<task id="task_q1d_pzf_yn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:task.xsd">
     <title>Task</title>
-    <shortdesc>This topic uses the Bentley Task topic  Relax NG schema.</shortdesc>
+    <shortdesc>This topic uses the Bentley Task topic XML schema.</shortdesc>
     <prolog>
         <metadata><keywords>
             <indexterm>task</indexterm>

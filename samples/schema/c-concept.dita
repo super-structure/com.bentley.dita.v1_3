@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:concept.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:concept.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<concept id="concept_rc5_jzf_yn">
+<concept id="concept_rc5_jzf_yn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:concept.xsd">
  <title>Concept</title>
- <shortdesc>This topic uses the Bentley Concept topic Relax NG schema.</shortdesc>
+ <shortdesc>This topic uses the Bentley Concept topic XML schema.</shortdesc>
  <prolog>
   <metadata>
    <keywords>

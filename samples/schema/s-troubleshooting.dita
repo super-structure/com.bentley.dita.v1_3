@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
-<?xml-model name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<?xml-model href="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<troubleshooting id="troubleshooting-template" xml:lang="en-us">
+<troubleshooting id="troubleshooting-template" xml:lang="en-us" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd">
   <title>Troubleshooting</title>
-  <shortdesc>This topic uses the Bentley Troubleshooting topic  Relax NG schema.</shortdesc>
+  <shortdesc>This topic uses the Bentley Troubleshooting topic XML schema.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
