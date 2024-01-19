@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<bookmap id="bookemap_example" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:bookmap.xsd">
+    <booktitle>
+        <mainbooktitle>Product Name</mainbooktitle>
+        <booktitlealt>Book Type Title</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <othermeta name="numbering" content="1"/>
+    </bookmeta>
+    <frontmatter>
+        <notices></notices>
+        <booklists>
+            <toc></toc>
+        </booklists>
+    </frontmatter>
+    <chapter href="m-map.ditamap" format="ditamap"/>
+</bookmap>

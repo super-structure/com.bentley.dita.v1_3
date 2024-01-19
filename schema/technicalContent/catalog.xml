@@ -9,53 +9,54 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
 
    <group><!-- System ID (URL) catalog entries -->
       <system systemId="urn:bentley:names:tc:dita:xsd:topic.xsd:1.3" 
-              uri="xsd/topic.xsd"/>
+              uri="xsd/bentley-topic.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:topic.xsd:1.x" 
-              uri="xsd/topic.xsd"/>
+              uri="xsd/bentley-topic.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:topic.xsd" 
-              uri="xsd/topic.xsd"/>
+              uri="xsd/bentley-topic.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd:1.3"
-              uri="xsd/concept.xsd"/>
+              uri="xsd/bentley-concept.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd:1.x"
-              uri="xsd/concept.xsd"/>
+              uri="xsd/bentley-concept.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:concept.xsd"
-              uri="xsd/concept.xsd"/>
+              uri="xsd/bentley-concept.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.3"
-              uri="xsd/generalTask.xsd"/>
+              uri="xsd/bentley-generalTask.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.x"
-              uri="xsd/generalTask.xsd"/>
+              uri="xsd/bentley-generalTask.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:generalTask.xsd"
-              uri="xsd/generalTask.xsd"/>
+              uri="xsd/bentley-generalTask.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.3"
-              uri="xsd/glossary.xsd"/>
+              uri="xsd/bentley-glossary.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.x"
-              uri="xsd/glossary.xsd"/>
+              uri="xsd/bentley-glossary.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossary.xsd"
-              uri="xsd/glossary.xsd"/>
+              uri="xsd/bentley-glossary.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.3"
-              uri="xsd/glossentry.xsd"/>
+              uri="xsd/bentley-glossentry.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.x"
-              uri="xsd/glossentry.xsd"/>
+              uri="xsd/bentley-glossentry.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossentry.xsd"
-              uri="xsd/glossentry.xsd"/>
+              uri="xsd/bentley-glossentry.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.3"
-              uri="xsd/glossgroup.xsd"/>
+              uri="xsd/bentley-glossgroup.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.x"
-              uri="xsd/glossgroup.xsd"/>
+              uri="xsd/bentley-glossgroup.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:glossgroup.xsd"
-              uri="xsd/glossgroup.xsd"/>
+              uri="xsd/bentley-glossgroup.xsd"/>
       
       <!-- DITA 1.2 version of the URNs for glossgroup shell. -->
-      <system systemId="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" uri="xsd/glossgroup.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" 
+              uri="xsd/bentley-glossgroup.xsd"/>
      
-      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/map.xsd"/>
-      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/map.xsd"/>
-      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/map.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/bentley-map.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/bentley-map.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/bentley-map.xsd"/>
       
       <system systemId="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.3"
               uri="xsd/programmingDomain.xsd"/>
@@ -64,11 +65,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       <system systemId="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd"
               uri="xsd/programmingDomain.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd:1.3"
-              uri="xsd/reference.xsd"/>
+              uri="xsd/bentley-reference.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd:1.x"
-              uri="xsd/reference.xsd"/>
+              uri="xsd/bentley-reference.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:reference.xsd"
-              uri="xsd/reference.xsd"/>
+              uri="xsd/bentley-reference.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.3"
               uri="xsd/strictTaskbodyConstraintMod.xsd"/>
@@ -77,9 +78,9 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       <system systemId="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd"
               uri="xsd/strictTaskbodyConstraintMod.xsd"/>
            
-      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/task.xsd"/>
-      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/task.xsd"/>
-      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/task.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/bentley-task.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/bentley-task.xsd"/>
+      <system systemId="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/bentley-task.xsd"/>
            
            <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.3"
                    uri="xsd/taskMod.xsd"/>
@@ -89,11 +90,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
                    uri="xsd/taskMod.xsd"/>
 
       <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.3"
-              uri="xsd/troubleshooting.xsd"/>
+              uri="xsd/bentley-troubleshooting.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.x"
-              uri="xsd/troubleshooting.xsd"/>
+              uri="xsd/bentley-troubleshooting.xsd"/>
       <system systemId="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd"
-              uri="xsd/troubleshooting.xsd"/>
+              uri="xsd/bentley-troubleshooting.xsd"/>
            
       <system systemId="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.3"
               uri="xsd/uiDomain.xsd"/>
@@ -105,11 +106,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
            
            <!-- ========== BENTLEY SPECIALIZED TOPIC TYPES ================== -->
            <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd:1.3"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd:1.x"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:faq.xsd"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.3"
                    uri="xsd/faqGrp.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.x"
@@ -124,11 +125,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
                    uri="xsd/faqMod.xsd"/>
            
            <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd:1.3"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd:1.x"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:verification.xsd"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.3"
                    uri="xsd/verificationGrp.xsd"/>
            <system systemId="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.x"
@@ -144,52 +145,52 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
    </group>
    <group><!-- Public ID (URN) catalog entries -->
       <uri name="urn:bentley:names:tc:dita:xsd:topic.xsd:1.3" 
-           uri="xsd/topic.xsd"/>
+           uri="xsd/bentley-topic.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:topic.xsd:1.x" 
-           uri="xsd/topic.xsd"/>
+           uri="xsd/bentley-topic.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:topic.xsd" 
-           uri="xsd/topic.xsd"/>
+           uri="xsd/bentley-topic.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd:1.3"
-           uri="xsd/concept.xsd"/>
+           uri="xsd/bentley-concept.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd:1.x"
-           uri="xsd/concept.xsd"/>
+           uri="xsd/bentley-concept.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:concept.xsd" 
-           uri="xsd/concept.xsd"/>
+           uri="xsd/bentley-concept.xsd"/>
 
       <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.3"
-           uri="xsd/generalTask.xsd"/>
+           uri="xsd/bentley-generalTask.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd:1.x"
-           uri="xsd/generalTask.xsd"/>
+           uri="xsd/bentley-generalTask.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:generalTask.xsd"
-           uri="xsd/generalTask.xsd"/>
+           uri="xsd/bentley-generalTask.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.3"
-           uri="xsd/glossary.xsd"/>
+           uri="xsd/bentley-glossary.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd:1.x"
-           uri="xsd/glossary.xsd"/>
-      <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd" uri="xsd/glossary.xsd"/>
+           uri="xsd/bentley-glossary.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:glossary.xsd" uri="xsd/bentley-glossary.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.3"
-           uri="xsd/glossentry.xsd"/>
+           uri="xsd/bentley-glossentry.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:glossentry.xsd:1.x"
-           uri="xsd/glossentry.xsd"/>
+           uri="xsd/bentley-glossentry.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:glossentry"
-           uri="xsd/glossentry.xsd"/>
+           uri="xsd/bentley-glossentry.xsd"/>
               
       <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.3"
-           uri="xsd/glossgroup.xsd"/>
+           uri="xsd/bentley-glossgroup.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd:1.x"
-           uri="xsd/glossgroup.xsd"/>
+           uri="xsd/bentley-glossgroup.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:glossgroup.xsd"
-           uri="xsd/glossgroup.xsd"/>
+           uri="xsd/bentley-glossgroup.xsd"/>
      
      <!-- DITA 1.2 version of the URNs for glossgroup shell. -->
-     <uri name="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" uri="xsd/glossgroup.xsd"/>   
+     <uri name="urn:bentley:names:tc:dita:xsd:glossarygroup.xsd" uri="xsd/bentley-glossgroup.xsd"/>   
      
-      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/map.xsd"/>
-      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/map.xsd"/>
-      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/map.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.3" uri="xsd/bentley-map.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd:1.x" uri="xsd/bentley-map.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:map.xsd" uri="xsd/bentley-map.xsd"/>
       
       <uri name="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd:1.3"
            uri="xsd/programmingDomain.xsd"/>
@@ -198,11 +199,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       <uri name="urn:bentley:names:tc:dita:xsd:programmingDomain.xsd"
            uri="xsd/programmingDomain.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd:1.3"
-           uri="xsd/reference.xsd"/>
+           uri="xsd/bentley-reference.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd:1.x"
-           uri="xsd/reference.xsd"/>
+           uri="xsd/bentley-reference.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:reference.xsd"
-           uri="xsd/reference.xsd"/>
+           uri="xsd/bentley-reference.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd:1.3"
            uri="xsd/strictTaskbodyConstraintMod.xsd"/>
@@ -211,9 +212,9 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       <uri name="urn:bentley:names:tc:dita:xsd:strictTaskbodyConstraintMod.xsd"
            uri="xsd/strictTaskbodyConstraintMod.xsd"/>
            
-      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/task.xsd"/>
-      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/task.xsd"/>
-      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/task.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.3" uri="xsd/bentley-task.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd:1.x" uri="xsd/bentley-task.xsd"/>
+      <uri name="urn:bentley:names:tc:dita:xsd:task.xsd" uri="xsd/bentley-task.xsd"/>
            
            
            <system systemId="urn:bentley:names:tc:dita:xsd:taskMod.xsd:1.3"
@@ -230,11 +231,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
       <uri name="urn:bentley:names:tc:dita:xsd:taskMod.xsd" uri="xsd/taskMod.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.3"
-           uri="xsd/troubleshooting.xsd"/>
+           uri="xsd/bentley-troubleshooting.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd:1.x"
-           uri="xsd/troubleshooting.xsd"/>
+           uri="xsd/bentley-troubleshooting.xsd"/>
       <uri name="urn:bentley:names:tc:dita:xsd:troubleshooting.xsd"
-           uri="xsd/troubleshooting.xsd"/>
+           uri="xsd/bentley-troubleshooting.xsd"/>
            
       <uri name="urn:bentley:names:tc:dita:xsd:uiDomain.xsd:1.3"
            uri="xsd/uiDomain.xsd"/>
@@ -245,11 +246,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
            
            <!-- ========== BENTLEY SPECIALIZED TOPIC TYPES ================== -->
            <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd:1.3"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd:1.x"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:faq.xsd"
-                   uri="xsd/faq.xsd"/>
+                   uri="xsd/bentley-faq.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.3"
                    uri="xsd/faqGrp.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:faqGrp.xsd:1.x"
@@ -264,11 +265,11 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
                    uri="xsd/faqMod.xsd"/>
            
            <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd:1.3"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd:1.x"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:verification.xsd"
-                   uri="xsd/verification.xsd"/>
+                   uri="xsd/bentley-verification.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.3"
                    uri="xsd/verificationGrp.xsd"/>
            <uri name="urn:bentley:names:tc:dita:xsd:verificationGrp.xsd:1.x"

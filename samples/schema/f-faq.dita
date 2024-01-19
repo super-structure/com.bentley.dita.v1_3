@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<faq id="faq-template" xml:lang="en-us"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:bentley:names:tc:dita:xsd:faq.xsd">
+  <title>FAQ</title>
+  <shortdesc>This topic uses the Bentley FAQ Topic XML schema.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>faq</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <faqbody>
+    <faqgroup class="- topic/section faq/faqgroup ">
+      <title>Question Set 1</title>
+      <faqlist class="- topic/simpletable faq/faqlist ">
+        <faqitem class="- topic/strow faq/faqitem ">
+          <faqquest>Question 1</faqquest>
+          <faqans>Answer 1</faqans>
+          <faqprop></faqprop>
+        </faqitem>
+        <faqitem class="- topic/strow faq/faqitem ">
+          <faqquest>Question 2</faqquest>
+          <faqans>Answer 2</faqans>
+          <faqprop><ownerEmail class="- topic/xref faq/ownerEmail " format="mailto"
+            scope="external"
+            href="email.address@your.com"><name>User Name</name></ownerEmail></faqprop>
+        </faqitem>
+      </faqlist>
+    </faqgroup>
+    <faqgroup class="- topic/section faq/faqgroup ">
+      <title>A Second Group of Questions</title>
+      <faqlist class="- topic/simpletable faq/faqlist ">
+        <faqitem class="- topic/strow faq/faqitem ">
+          <faqquest>Question 1</faqquest>
+          <faqans>Answer 1</faqans>
+        </faqitem>
+        <faqitem class="- topic/strow faq/faqitem ">
+          <faqquest>Question 2</faqquest>
+          <faqans>Answer 2</faqans>
+        </faqitem>
+      </faqlist>
+    </faqgroup> 
+    
+  </faqbody>
+</faq>
+

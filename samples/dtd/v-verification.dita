@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE verification PUBLIC "-//BENTLEY//DTD DITA Verification//EN" "bentley-verification.dtd"[]>
+<verification id="BENTLEYVERIFICATIONTEMPLATE" xml:lang="en">
+ <title>Verification</title>
+ <shortdesc>This topic uses the Bentley Verification specialized topic DocType.</shortdesc>
+ <prolog>
+  <author>Joaquin.Vera</author>
+  <author>Jason.Coleman</author>
+  <metadata>
+   <category>verification.example</category>
+   <keywords>
+    <indexterm>verification</indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <verbody>
+  <reference id="reference_azc_x5y_cjb">
+   <title>Reference</title>
+  </reference>
+  <problem>
+   <title>Problem</title>
+   <p>A problem statement</p>
+   <lq>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Quisque egestas diam in arcu cursus. Rhoncus mattis rhoncus urna
+    neque viverra justo nec ultrices dui. Viverra ipsum nunc aliquet bibendum enim facilisis. Sit
+    amet massa vitae tortor condimentum lacinia quis vel eros. Viverra aliquet eget sit amet tellus.
+    Non curabitur gravida arcu ac. </lq>
+  </problem>
+  <calcs>
+   <section id="section_w3w_v5y_cjb">
+    <title>Calculations</title>
+    <p/>
+   </section>
+  <section>
+   <title>Highlighting Domain</title>
+   <p>Now <em>this</em> is some emphasis.</p>
+  </section>
+   <section id="section_hlr_ywl_d1c">
+    <title>Equation and Math Domains</title>
+    <p>An <xmlelement>equation-inline</xmlelement> element with text content:
+       <equation-inline>A<sup>2</sup> + B<sup>2</sup> = C<sup>2</sup></equation-inline></p>
+    <p>An <xmlelement>equation-figure</xmlelement> element with text content:</p>
+    <equation-figure id="equation-figure_ilr_ywl_d1c">
+     <equation-block id="equation-block_jlr_ywl_d1c">A<sup>2</sup> + B<sup>2</sup> =
+      C<sup>2</sup></equation-block>
+     <dl id="dl_klr_ywl_d1c">
+      <dlentry>
+       <dt>A</dt>
+       <dd>Long side of triangle</dd>
+      </dlentry>
+      <dlentry>
+       <dt>B</dt>
+       <dd>Short side of triangle</dd>
+      </dlentry>
+      <dlentry>
+       <dt>C</dt>
+       <dd>Hypotenuse of triangle</dd>
+      </dlentry>
+     </dl>
+    </equation-figure>
+    <p>An <xmlelement>equation-inline</xmlelement> with MathML content: <equation-inline><mathml>
+       <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"
+        id="GUID-8F13F947-884D-43D1-9F7F-4DF8CFFECCF1">
+        <m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:msup>
+         <m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>b</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:msup>
+         <m:mi>c</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       </m:math>
+      </mathml></equation-inline></p>
+    <p>An <xmlelement>equation-block</xmlelement> element containing MathML markup using the
+      <xmlatt>displayTrue</xmlatt>=<q>true</q>:</p>
+    <equation-block id="equation-block_llr_ywl_d1c">
+     <mathml>
+      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" displaystyle="true">
+       <m:mi>x</m:mi>
+       <m:mo>=</m:mo>
+       <m:mfrac>
+        <m:mrow>
+         <m:mo>-</m:mo>
+         <m:mi>b</m:mi>
+         <m:mo>±</m:mo>
+         <m:msqrt>
+          <m:msup>
+           <m:mrow>
+            <m:mi>b</m:mi>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>2</m:mn>
+           </m:mrow>
+          </m:msup>
+          <m:mo>-</m:mo>
+          <m:mn>4</m:mn>
+          <m:mi>a</m:mi>
+          <m:mi>c</m:mi>
+         </m:msqrt>
+        </m:mrow>
+        <m:mrow>
+         <m:mn>2</m:mn>
+         <m:mi>a</m:mi>
+        </m:mrow>
+       </m:mfrac>
+      </m:math>
+     </mathml>
+    </equation-block>
+    <p>An <xmlelement>equation-figure</xmlelement> containing MathML markup:</p>
+    <equation-figure id="equation-figure_mlr_ywl_d1c">
+     <equation-block id="equation-block_p2c_xxd_cjb">
+      <mathml>
+       <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"
+        id="GUID-8F13F947-884D-43D1-9F7F-4DF8CFFECCF2">
+        <m:msup>
+         <m:mi>a</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:msup>
+         <m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>b</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:msup>
+         <m:mi>c</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+       </m:math>
+      </mathml>
+     </equation-block>
+     <dl id="dl_nlr_ywl_d1c">
+      <dlentry>
+       <dt><equation-inline><mathml>
+          <m:math>
+           <m:mi>A</m:mi>
+          </m:math>
+         </mathml></equation-inline></dt>
+       <dd>Long side of triangle</dd>
+      </dlentry>
+      <dlentry>
+       <dt><equation-inline><mathml>
+          <m:math>
+           <m:mi>B</m:mi>
+          </m:math>
+         </mathml></equation-inline></dt>
+       <dd>Short side of triangle</dd>
+      </dlentry>
+      <dlentry>
+       <dt><equation-inline><mathml>
+          <m:math>
+           <m:mi>C</m:mi>
+          </m:math>
+         </mathml></equation-inline></dt>
+       <dd>Hypotenuse of triangle</dd>
+      </dlentry>
+     </dl>
+    </equation-figure>
+   </section>
+  <section>
+   <title>Programming Domain</title>
+  <syntaxdiagram>
+   <keyin>
+     <kwd>KWD</kwd>
+     <kwdchoice>
+      <kwd>KWD1</kwd>
+      <kwd>KWD2</kwd>
+     </kwdchoice>
+     <var>var</var>
+    </keyin>
+  </syntaxdiagram>
+  </section>
+  <section>
+   <title>UI Domain</title>
+   <p>Press <kbd>Enter</kbd>.</p>
+  </section>
+   
+  </calcs> 
+  <comparison>
+   <title>Comparison</title>
+   <table id="TABLE_136FD118620A49689E15B5E2F1BBF4D6">
+    <title id="GUID-4DD71DC8-7547-493B-B4EF-519A453801FB">Comparison of values</title>
+    <tgroup cols="4">
+     <thead>
+      <row>
+       <entry>Parameter</entry>
+       <entry>
+        <ph/>
+       </entry>
+       <entry>Reference</entry>
+       <entry>Difference</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>A</entry>
+       <entry>9.90</entry>
+       <entry>10</entry>
+       <entry>negligible</entry>
+      </row>
+      <row>
+       <entry>B</entry>
+       <entry>10</entry>
+       <entry>10</entry>
+       <entry>none</entry>
+      </row>
+      <row>
+       <entry>C</entry>
+       <entry>10.01</entry>
+       <entry>10</entry>
+       <entry>negligible</entry>
+      </row>
+      <row>
+       <entry>D</entry>
+       <entry>8.9</entry>
+       <entry>10</entry>
+       <entry>11%</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </comparison>
+  <input>
+   <title>Input Section</title>
+  </input>
+  <output>
+   <title>Output Section</title>
+  </output>
+ </verbody>
+</verification>

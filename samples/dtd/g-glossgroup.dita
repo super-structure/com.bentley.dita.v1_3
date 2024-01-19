@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//BENTLEY//DTD DITA Glossary Group//EN" "bentley-glossgroup.dtd">
+<glossgroup id="glossgroup_thv_f1z_cjb">
+    <title>Glossary Group</title>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>glossgroup</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <glossentry id="ddl">
+        <glossterm>Term 1</glossterm>
+        <glossdef>Definition 1</glossdef>
+    </glossentry>
+    <glossentry id="dd2">
+        <glossterm>Term 2</glossterm>
+        <glossdef>Definition 2</glossdef>
+    </glossentry>
+    <glossentry id="dd3" conref="g-glossentry.dita">
+        <glossterm></glossterm>
+        <glossdef></glossdef>
+    </glossentry>
+</glossgroup>

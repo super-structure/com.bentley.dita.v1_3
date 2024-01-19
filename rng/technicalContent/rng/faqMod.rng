@@ -362,17 +362,21 @@ Copyright (c) Bentley Systems, Incorporated. All rights reserved.
         <optional>
           <attribute name="type"/>
         </optional>
-        <attribute name="format">
-          <value>mailto</value>
-        </attribute>
-        <attribute name="scope">
-          <choice>
-            <value>external</value>
-            <value>local</value>
-            <value>peer</value>
-            <value>-dita-use-conref-target</value>
-          </choice>
-        </attribute>
+        <optional>
+          <attribute name="format">
+            <value>mailto</value>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="scope">
+            <choice>
+              <value>external</value>
+              <value>local</value>
+              <value>peer</value>
+              <value>-dita-use-conref-target</value>
+            </choice>
+          </attribute>
+        </optional>
         <ref name="univ-atts"/>
         <optional>
           <attribute name="outputclass"/>

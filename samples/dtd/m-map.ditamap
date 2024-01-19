@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//BENTLEY//DTD DITA Map//EN" "bentley-map.dtd">
+<map id="MAP_EXAMPLE-DTD">
+ <title>DITA Topic Map</title>
+ <topicmeta>
+  <author>Jason Coleman</author>
+ </topicmeta>
+ <topicref href="base_topic.dita" format="dita" navtitle="Base Topic"/>
+ <topicref href="c-concept.dita" format="dita" navtitle="Concept"/>
+ <topicref href="f-faq.dita" format="dita" navtitle="FAQ"/>
+ <topicref href="r-reference.dita" format="dita" navtitle="Reference"/>
+ <topicref href="s-troubleshooting.dita" format="dita" navtitle="Troubleshooting"/>
+ <topicref href="t-task.dita" format="dita" navtitle="Task"/>
+ <topicref href="v-verification.dita" format="dita" navtitle="Verification"/>
+ <topicref href="g-glossgroup.dita" format="dita" navtitle="Glossary Group"/>
+ <reltable>
+  <relheader>
+   <relcolspec type="concept"/>
+   <relcolspec type="reference"/>
+   <relcolspec type="task"/>
+  </relheader>
+  <relrow>
+   <relcell>
+    <topicref href="c-concept.dita"/>
+   </relcell>
+   <relcell>
+    <topicref href="r-reference.dita"/>
+   </relcell>
+   <relcell>
+    <topicref href="t-task.dita"/>
+   </relcell>
+  </relrow>
+ </reltable>
+</map>
