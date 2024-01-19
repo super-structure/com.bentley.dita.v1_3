@@ -9,7 +9,7 @@ This plug-in contains grammar files for Bentley's specializations of DITA v1.3 t
 
 At the command line prompt, enter the following command:
 
-```dita install https://github.com/super-structure/com.bentley.dita.v1_3/releases/download/v1.1.0/com.bentley.dita.v1_3_1.1.0.zip```
+```dita install https://github.com/super-structure/com.bentley.dita.v1_3/releases/download/v1.1.0/com.bentley.dita.v1_3.zip```
 
 ## Notes
 
